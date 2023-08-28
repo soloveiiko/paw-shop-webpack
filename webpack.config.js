@@ -16,7 +16,7 @@ module.exports = {
         open: true,
         compress: true,
         liveReload: true,
-        watchFiles: ["./src/*.html"],
+        watchFiles: ["./src/*.html, ./src/*.(s*)css"],
         hot: true,
     },
     plugins: [
