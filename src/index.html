@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<%= require('./images/icons/arrow.svg') %>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<div id="root" class="paw-shop">
+  <header class="paw-shop__header header">
+    <div class="header__logo logo">
+      <img src="<%= require('./images/logo/logo-dark.svg') %>" alt="Logo"/>
+      <span class="logo__text">PawShop</span>
+    </div>
+    <nav class="header__menu menu">
+      <ul class="menu__list">
+        <li class="menu__item"><a href="#">For <b>cat</b></a></li>
+        <li class="menu__item"><a href="#">For <b>dog</b></a></li>
+        <li class="menu__item"><a href="#">Contacts</a></li>
+        <li class="menu__item">Tracking</li>
+      </ul>
+    </nav>
+    <div class="header__tools">
+      <div class="header__number">1-800-055-5566</div>
+      <div class="header__profile">
+        <img src="<%= require('./images/icons/user.svg') %>" alt="Profile">
+      </div>
+      <div class="header__basket basket">
+        <div class="basket__image">
+          <img src="<%= require('./images/icons/basket.svg') %>" alt="Basket">
+        </div>
+        <div class="basket__counter">2</div>
+        <div class="basket__price">$8</div>
+      </div>
+    </div>
+    <div class="header__toggle-menu toggle-menu">
+      <div class="toggle-menu__btn">
+        <span></span>
+      </div>
+      <div class="toggle-menu__top-block">
+        <div class="toggle-menu__logo">Menu</div>
+        <div class="toggle-menu__close-btn">&#x2715</div>
+      </div>
+      <nav class="toggle-menu__container">
+        <ul class="toggle-menu__list">
+          <li class="toggle-menu__item">Home</li>
+          <li class="toggle-menu__item">For <span class="toggle-menu__cat">cat</span></li>
+          <li class="toggle-menu__item">For <span class="toggle-menu__dog">dog</span></li>
+          <li class="toggle-menu__item">Contacts</li>
+          <li class="toggle-menu__item">Tracking</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="paw-shop__main-page main-page page">
+    <section class="main-page__banner banner">
+      <div class="banner__container container">
+        <h1 class="banner__title">Make your pet’s life better</h1>
+        <div class="banner__for-pets">
+          <div class="banner__btn-for-cat btn-container">
+            <button><img src="<%= require('./images/icons/arrow.svg') %>" alt="arrow">For <span
+                    class="banner__cat">cat</span></button>
+          </div>
+          <div class="banner__text">Toys and accessories that your pet will like</div>
+          <div class="banner__btn-for-dog btn-container">
+            <button>For <span>dog</span><img src="<%= require('./images/icons/arrow.svg') %>" alt="arrow">
+            </button>
+          </div>
+        </div>
+        <div class="banner__benefits benefits">
+          <ul class="benefits__list">
+            <li class="benefits__item"><img src="<%= require('./images/icons/star.svg') %>" alt=""><b>Unique</b>
+              products
+            </li>
+            <li class="benefits__item"><img src="<%= require('./images/icons/support.svg') %>" alt=""><b>24/7</b>support
+            </li>
+            <li class="benefits__item"><img src="<%= require('./images/icons/return.svg') %>" alt=""><b>Free
+              return</b> within 15 days
+            </li>
+            <li class="benefits__item"><img src="<%= require('./images/icons/checkmark.svg') %>" alt=""><b>Happy</b>
+              pet
+            </li>
+          </ul>
+        </div>
+        <img src="<%= require('./images/background/ball.png') %>" alt="Ball">
+        <img src="<%= require('./images/background/bone.png') %>" alt="Bone">
+        <img src="<%= require('./images/background/cat.png') %>" alt="Cat">
+        <img src="<%= require('./images/background/dog.png') %>" alt="Dog">
+      </div>
+    </section>
+    <section class="main-page__special-offer special-offer">
+      <div class="special-offer__container container">
+        <div class="special-offer__slider">
+          <div class="special-offer__slide">
+            <img src="<%= require('./images/background/cart-transparent.png') %>" alt="Special Offer">
+            <div class="special-offer__information">
+              <h1 class="special-offer__title"><span>FREE</span>SHIPPING</h1>
+              <p class="text">Go to your shopping cart and use promocode <span>FREESHIPPING</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-page__popular-products popular-products">
+      <h1 class="popular-products__headline headline">Popular products</h1>
+      <div class="popular-products__list">
+        <div class="popular-products__item">
+          <img class="popular-products__image" src="<%= require('./images/products/toy1.jpg') %>" alt="Product">
+          <div class="popular-products__title">Ball for a dog «Denta Fun» d=5 см (rubber)</div>
+          <div class="popular-products__stars-container">
+            <div class="popular-products__stars-range">
+              <img src="<%= require('./images/icons/stars.svg') %>" alt="Star">
+              <img src="<%= require('./images/icons/stars.svg') %>" alt="Star">
+              <img src="<%= require('./images/icons/stars.svg') %>" alt="Star">
+              <img src="<%= require('./images/icons/stars.svg') %>" alt="Star">
+              <img src="<%= require('./images/icons/stars.svg') %>" alt="Star">
+            </div>
+            <div class="popular-products__stars-count">2</div>
+          </div>
+          <div class="popular-products__price-container">
+            <div class="popular-products__price">$4</div>
+            <div class="popular-products__btn-in-basket btn-container">
+              <button>+<img src="<%= require('./images/icons/basket.svg') %>" alt="In Basket"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popular-products__for-pets">
+        <div class="popular-products__btn-for-cat btn-container">
+          <button class="popular-products__btn">
+            Products for
+            <span class="popular-products__cat">cat</span>
+            <img src="<%= require('./images/icons/cat.svg') %>" alt="Cat"><img src="<%= require('./images/icons/arrow.svg') %>" alt="Arrow">
+          </button>
+        </div>
+        <div class="popular-products__btn-for-dog btn-container">
+          <button class="popular-products__btn">
+            Products for
+            <span class="popular-products__dog">dog</span>
+            <img src="<%= require('./images/icons/dog.svg') %>" alt="Dog"><img src="<%= require('./images/icons/arrow.svg') %>" alt="Arrow">
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="main-page__reviews reviews">
+      <div class="reviews__container container">
+        <h1 class="reviews__headline headline"></h1>
+        <div class="reviews__slider">
+          <div class="reviews__slide">
+            <div class="date"></div>
+            <div class="reviews__user">
+              <div class="reviews__username"></div>
+              <div class="reviews__stars"></div>
+            </div>
+            <div class="reviews__body"></div>
+            <div class="reviews__images">
+              <img class="reviews__image" src="" alt="">
+              <img class="reviews__image" src="" alt="">
+              <img class="reviews__image" src="" alt="">
+              <span class="reviews__show-more-image"></span>
+            </div>
+            <a href="#" class="reviews__link">See the product <img src="" alt="Go"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-page__about-us about-us">
+      <div class="about-us__container container">
+        <h1 class="about-us__headline headline"></h1>
+        <div class="about-us__text-container">
+          <img class="about-us__image" src="" alt="Dog">
+          <h4 class="about-us__title">
+            <span></span><span></span>
+          </h4>
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+        <div class="about-us__text-container">
+          <h4 class="about-us__title">
+            <span></span>
+          </h4>
+          <p></p>
+          <p></p>
+          <p></p>
+          <img class="about-us__image" src="" alt="Cat">
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer class="paw-shop__footer footer">
+    <div class="footer__subscribe subscribe">
+      <img class="subscribe__background_top" src="" alt="">
+      <div class="subscribe__title"></div>
+      <div class="subscribe__input-container">
+        <input type="email" placeholder="Your e-mail">
+        <button class="subscribe__btn"></button>
+      </div>
+      <img class="subscribe__background_bottom" src="" alt="">
+    </div>
+    <div class="footer__body">
+      <div class="footer__top">
+        <div class="footer__logo logo">
+          <img class="logo__image" src="" alt="Logo">
+          <span class="logo__text"></span>
+        </div>
+        <div class="footer__number">
+          <img src="" alt="Number">
+        </div>
+        <div class="footer__social-network social-network">
+          <ul class="social-network__list">
+            <li class="social-network__item"></li>
+            <li class="social-network__item"></li>
+            <li class="social-network__item"></li>
+          </ul>
+        </div>
+        <nav class="footer__menu">
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item"></li>
+            <li class="footer__menu-item"></li>
+            <li class="footer__menu-item"></li>
+            <li class="footer__menu-item"></li>
+            <li class="footer__menu-item"></li>
+            <li class="footer__menu-item"></li>
+            <li class="footer__menu-item"></li>
+            <li class="footer__menu-item"></li>
+            <li class="footer__menu-item"></li>
+            <li class="footer__menu-item"></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__cards cards">
+          <ul class="cards__list">
+            <li class="cards__item"><img src="" alt=""></li>
+            <li class="cards__item"><img src="" alt=""></li>
+            <li class="cards__item"><img src="" alt=""></li>
+            <li class="cards__item"><img src="" alt=""></li>
+            <li class="cards__item"><img src="" alt=""></li>
+          </ul>
+        </div>
+        <div class="footer__copyright">
+          Copyright © 2022. All Rights Reserved by SleepGo
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
