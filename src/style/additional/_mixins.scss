@@ -1,0 +1,66 @@
+@mixin button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border-radius: $border-radius;
+}
+@mixin button-mobile {
+  font-size: $text-size-mobile;
+}
+@mixin button-md {
+  font-size: $text-size;
+}
+@mixin pet-button {
+  @include button;
+  height: 60px;
+  padding: 20px 30px;
+  background-color: $transparent-white;
+}
+@mixin pet-button-hover {
+  background-color: $white;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.10);
+}
+@mixin arrow {
+  width: 59px;
+  height: 59px;
+}
+@mixin h1-title-mobile {
+  font-size: $h1-size-mobile;
+  font-weight: 900;
+}
+@mixin h1-title {
+  font-size: $h1-size;
+  font-weight: 900;
+}
+@mixin h2-title-mobile {
+  font-size: $h2-size-mobile;
+  font-weight: 700;
+}
+@mixin h2-title {
+  font-size: $h2-size;
+  font-weight: 700;
+}
+@mixin h3-title-mobile {
+  font-size: $h3-size-mobile;
+  font-weight: 400;
+}
+@mixin h3-title {
+  font-size: $h3-size;
+  font-weight: 400;
+}
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
