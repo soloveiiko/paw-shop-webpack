@@ -1,6 +1,13 @@
 @import 'additional/variables';
 @import 'additional/mixins';
 @import 'additional/fonts';
+@import 'components/header';
+@import 'components/banner';
+@import 'components/special-offer';
+@import 'components/popular-products';
+@import 'components/reviews';
+@import 'components/about-us';
+@import 'components/footer';
 
 html,
 body {
@@ -12,6 +19,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: $white;
+  overflow-x: hidden;
 }
 
 html {
@@ -37,7 +45,7 @@ h6 {
 }
 
 a {
- text-decoration: none;
+  text-decoration: none;
 }
 
 ul,
@@ -56,6 +64,23 @@ h2 {
 
 h3 {
   @include h3-title-mobile;
+}
+
+.container {
+  max-width: 1300px;
+}
+
+.cat, .dog {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.cat {
+  color: $cat;
+}
+
+.dog {
+  color: $dog;
 }
 
 @include md {

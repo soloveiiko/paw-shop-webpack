@@ -1,0 +1,237 @@
+.header {
+  //position: absolute;
+  top: 12px;
+  margin: 0 auto;
+  max-width: 1170px;
+
+  &__container {
+    position: relative;
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__tools {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+  }
+
+  &__number {
+    display: none;
+    font-size: $h3-size;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  &__profile {
+  }
+
+  &__open-toggle-menu {
+    width: 33px;
+    height: 18.207px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__open-toggle-menu-btn {
+    font-size: 0;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 1px 16px;
+    cursor: pointer;
+    background-color: $black;
+    border: none;
+
+    &::before, &::after {
+      position: absolute;
+      left: 0;
+      content: '';
+      background-color: $black;
+      padding: 1px 16.5px;
+    }
+
+    &::before {
+      top: -7px;
+    }
+
+    &::after {
+      top: 7px;
+    }
+  }
+
+  &__toggle-menu {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    background-color: $white;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  &__text {
+    font-family: 'Amatic SC', cursive;
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+
+.menu {
+  display: none;
+
+  &__item {
+    b {
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+  }
+}
+
+.basket {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &__image {
+    background-color: $accent;
+    padding: 13px 13.5px;
+    border-radius: 50px;
+  }
+
+  &__counter {
+    position: absolute;
+    bottom: -2px;
+    right: -3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    width: 22px;
+    height: 22px;
+    color: $white;
+    background: $gradient;
+  }
+
+  &__price {
+    display: none;
+  }
+}
+
+.toggle-menu {
+  padding: 0 0 50px;
+  border-radius: 0 0 20px 20px;
+
+  &__top-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 16px;
+    border-bottom: 1px solid $light-gray;
+  }
+
+  &__logo {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &__close-btn {
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 1px solid #8936FF;
+    color: #8936FF;
+    width: 32px;
+    height: 32px;
+    background-color: $white;
+    cursor: pointer;
+  }
+
+  &__container {
+    padding: 20px 16px 60px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  &__item {
+    font-size: 16px;
+  }
+
+  &__number {
+    font-size: $h3-size;
+    font-weight: 500;
+    white-space: nowrap;
+    padding: 0 16px;
+  }
+}
+
+@include md {
+  .header {
+    &__number {
+      display: block;
+    }
+  }
+  .logo {
+    &__text {
+      font-size: 28px;
+    }
+  }
+  .basket {
+    &__counter {
+      left: 35px;
+    }
+
+    &__price {
+      display: block;
+      font-weight: 500;
+    }
+  }
+  .toggle-menu {
+    &__list {
+      height: 140px;
+      flex-wrap: wrap;
+    }
+
+    &__number {
+      display: none;
+    }
+  }
+}
+
+@include lg {
+  .header {
+    &__number {
+      margin: 0 35px 0 auto;
+    }
+
+    &__open-toggle-menu {
+      display: none;
+    }
+  }
+  .menu {
+    width: 100%;
+    display: block;
+
+    &__list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+    }
+  }
+}
