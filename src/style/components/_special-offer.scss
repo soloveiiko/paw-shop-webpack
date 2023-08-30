@@ -2,51 +2,157 @@
   position: relative;
   z-index: 1;
   background: linear-gradient(180deg, #964BFF 0%, #722AD8 100%);
-  &__container {
+
+  .container {
+    padding-left: 0;
   }
 
   &__slider {
   }
 
   &__slide {
+    position: relative;
     display: flex;
-    align-items: center;
     gap: 70px;
+    width: 100%;
+    height: 326px;
+    padding: 30px 0;
+    justify-content: flex-end;
+    overflow: hidden;
   }
 
   &__information {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 17px;
+  }
+
+  &__mobile-img {
+    position: absolute;
+    top: 15px;
+    left: 19px;
+    scale: 1.1;
+  }
+
+  &__img, &__tablet-img {
+    display: none;
   }
 
   &__title {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: right;
+    font-size: 39px;
   }
-  
+
+  &__title-item {
+    color: $white;
+    z-index: 1;
+  }
+
+  &__marker {
+    color: #FEB905;
+  }
+
+  &__duplicate-title {
+    position: absolute;
+    color: $black;
+    z-index: 0;
+    top: 4px;
+  }
+
   &__text {
     text-align: right;
+    max-width: 273px;
+    color: $white;
+    font-size: 15px;
+
+    span {
+      color: #FFBC05;
+      font-weight: 600;
+    }
   }
 }
+
 @include md {
   .special-offer {
+
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
 
     &__slide {
       display: flex;
       align-items: center;
       gap: 70px;
+      height: auto;
+      padding: 0;
+    }
+
+    &__tablet-img {
+      display: block;
+      width: 100%;
+    }
+
+    &__mobile-img {
+      display: none;
     }
 
     &__information {
+      display: none;
+    }
+  }
+}
+
+@include lg {
+  .special-offer {
+
+    .container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    &__slide {
+      display: flex;
+      gap: 70px;
+      height: auto;
+      justify-content: space-between;
+      max-width: 1168px;
+      margin: 0 auto;
+      padding: 54px 0 0;
     }
 
     &__title {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: right;
+      font-size: $h1-size;
     }
 
+    &__title-item, &__duplicate-title {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    &__mobile-img, &__tablet-img {
+      display: none;
+    }
+
+    &__img {
+      display: block;
+    }
+
+    &__information {
+      margin-top: -88px;
+      display: flex;
+      gap: 10px;
+    }
     &__text {
-      text-align: right;
+      font-size: $h3-size;
+      max-width: 342px;
     }
   }
 }

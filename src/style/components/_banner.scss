@@ -21,11 +21,10 @@
     &_top {
       top: 46px;
       width: 100%;
-      left: 5px;
+      left: 21px;
       z-index: 2;
       justify-content: center;
       height: 270px;
-
     }
 
     &_bottom {
@@ -107,9 +106,6 @@
     justify-content: center;
   }
 
-  &__for-pets-btn-container {
-  }
-
   &__for-pets-btn {
     @include pet-button;
   }
@@ -117,20 +113,10 @@
   &__btn-text {
     white-space: nowrap;
   }
-
-  &__cat {
-  }
-
   &__text {
     margin: 0 30px;
     grid-column: 1/3;
     grid-row: 1/2;
-  }
-
-  &__dog {
-  }
-
-  &__benefits {
   }
 }
 
@@ -156,9 +142,6 @@
     b {
       font-weight: 500;
     }
-  }
-
-  &__text {
   }
 }
 

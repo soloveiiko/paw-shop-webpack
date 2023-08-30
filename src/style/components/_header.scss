@@ -28,9 +28,6 @@
     white-space: nowrap;
   }
 
-  &__profile {
-  }
-
   &__open-toggle-menu {
     display: flex;
     align-items: center;
@@ -265,5 +262,8 @@
   }
   .basket {
     padding: 8px 0;
+      &__counter {
+        left: 33px;
+      }
   }
 }

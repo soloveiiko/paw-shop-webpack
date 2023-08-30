@@ -130,12 +130,14 @@
             <div class="special-offer__container container">
                 <div class="special-offer__slider">
                     <div class="special-offer__slide">
-                        <img src="<%= require('./images/background/cart-transparent.png') %>"
+                        <img class="special-offer__mobile-img" src="<%= require('./images/background/special-offer.png') %>" alt="Slide">
+                        <img class="special-offer__tablet-img" src="<%= require('./images/background/special-offer-tablet.png') %>" alt="Slide">
+                        <img class="special-offer__img" src="<%= require('./images/background/cart-transparent.png') %>"
                              alt="Special Offer">
                         <div class="special-offer__information">
-                            <h1 class="special-offer__title"><span>FREE</span>SHIPPING</h1>
-                            <h3 class="special-offer__text">Go to your shopping cart and use promocode <span>FREESHIPPING</span>
-                            </h3>
+                            <h1 class="special-offer__title"><span class="special-offer__title-item"><span class="special-offer__marker">FREE </span>SHIPPING</span>
+                                <span class="special-offer__duplicate-title"><span>FREE </span>SHIPPING</span></h1>
+                            <h3 class="special-offer__text">Go to your shopping cart and use promocode <span>FREESHIPPING</span></h3>
                         </div>
                     </div>
                 </div>
