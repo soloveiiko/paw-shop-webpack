@@ -1,27 +1,30 @@
 .header {
-  //position: absolute;
-  top: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 1205px;
   margin: 0 auto;
-  max-width: 1170px;
+  z-index: 20;
 
   &__container {
     position: relative;
     display: flex;
-    padding: 15px;
     align-items: center;
     justify-content: space-between;
+    padding: 14px 17px;
   }
 
   &__tools {
     display: flex;
     align-items: center;
-    gap: 35px;
+    gap: 33px;
   }
 
   &__number {
-    display: none;
     font-size: $h3-size;
     font-weight: 500;
+    display: none;
     white-space: nowrap;
   }
 
@@ -29,10 +32,10 @@
   }
 
   &__open-toggle-menu {
-    width: 33px;
-    height: 18.207px;
     display: flex;
     align-items: center;
+    width: 33px;
+    height: 18.207px;
   }
 
   &__open-toggle-menu-btn {
@@ -42,34 +45,34 @@
     margin: 0;
     padding: 1px 16px;
     cursor: pointer;
-    background-color: $black;
     border: none;
+    background-color: $black;
 
     &::before, &::after {
       position: absolute;
       left: 0;
+      padding: 1px 16.5px;
       content: '';
       background-color: $black;
-      padding: 1px 16.5px;
     }
 
     &::before {
-      top: -7px;
+      top: -11px;
     }
 
     &::after {
-      top: 7px;
+      top: 11px;
     }
   }
 
   &__toggle-menu {
-    display: none;
     position: absolute;
     z-index: 10;
-    background-color: $white;
     top: 0;
-    left: 0;
     right: 0;
+    left: 0;
+    display: none;
+    background-color: $white;
   }
 }
 
@@ -77,6 +80,10 @@
   display: flex;
   align-items: center;
   gap: 12px;
+
+  &__image {
+    width: 43px;
+  }
 
   &__text {
     font-family: 'Amatic SC', cursive;
@@ -90,8 +97,8 @@
 
   &__item {
     b {
-      text-transform: uppercase;
       font-weight: 500;
+      text-transform: uppercase;
     }
   }
 }
@@ -103,22 +110,22 @@
   gap: 10px;
 
   &__image {
-    background-color: $accent;
-    padding: 13px 13.5px;
+    padding: 11px 13.5px;
     border-radius: 50px;
+    background-color: $accent;
   }
 
   &__counter {
     position: absolute;
-    bottom: -2px;
-    right: -3px;
+    right: -1px;
+    bottom: -4px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50px;
     width: 22px;
     height: 22px;
     color: $white;
+    border-radius: 50px;
     background: $gradient;
   }
 
@@ -145,17 +152,17 @@
   }
 
   &__close-btn {
-    display: flex;
     font-size: 20px;
+    display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50px;
-    border: 1px solid #8936FF;
-    color: #8936FF;
     width: 32px;
     height: 32px;
-    background-color: $white;
     cursor: pointer;
+    color: #8936FF;
+    border: 1px solid #8936FF;
+    border-radius: 50px;
+    background-color: $white;
   }
 
   &__container {
@@ -175,36 +182,51 @@
   &__number {
     font-size: $h3-size;
     font-weight: 500;
-    white-space: nowrap;
     padding: 0 16px;
+    white-space: nowrap;
   }
 }
 
 @include md {
   .header {
+    &__container {
+      padding: 5px 17px;
+    }
+
     &__number {
       display: block;
     }
+
+    &__tools {
+      gap: 26px;
+    }
   }
   .logo {
+    &__image {
+      width: 38px;
+    }
+
     &__text {
       font-size: 28px;
     }
   }
   .basket {
+    padding: 8px 9.5px;
+
     &__counter {
-      left: 35px;
+      left: 43px;
+      bottom: 4px;
     }
 
     &__price {
-      display: block;
       font-weight: 500;
+      display: block;
     }
   }
   .toggle-menu {
     &__list {
-      height: 140px;
       flex-wrap: wrap;
+      height: 140px;
     }
 
     &__number {
@@ -216,16 +238,23 @@
 @include lg {
   .header {
     &__number {
-      margin: 0 35px 0 auto;
+      margin: 0 51px 0 auto;
     }
 
     &__open-toggle-menu {
       display: none;
     }
+
+    &__tools {
+      gap: 47px;
+    }
+  }
+  .logo {
+    gap: 15px;
   }
   .menu {
-    width: 100%;
     display: block;
+    width: 100%;
 
     &__list {
       display: flex;
@@ -233,5 +262,8 @@
       justify-content: center;
       gap: 40px;
     }
+  }
+  .basket {
+    padding: 8px 0;
   }
 }

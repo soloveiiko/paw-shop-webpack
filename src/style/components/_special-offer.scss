@@ -1,0 +1,52 @@
+.special-offer {
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(180deg, #964BFF 0%, #722AD8 100%);
+  &__container {
+  }
+
+  &__slider {
+  }
+
+  &__slide {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+  }
+
+  &__information {
+  }
+
+  &__title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+  }
+  
+  &__text {
+    text-align: right;
+  }
+}
+@include md {
+  .special-offer {
+
+    &__slide {
+      display: flex;
+      align-items: center;
+      gap: 70px;
+    }
+
+    &__information {
+    }
+
+    &__title {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: right;
+    }
+
+    &__text {
+      text-align: right;
+    }
+  }
+}

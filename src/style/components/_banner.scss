@@ -1,34 +1,332 @@
 .banner {
+  background: linear-gradient(179deg, #E9A904 0%, #FFC805 100%);
+
   &__container {
+    position: relative;
+    padding-top: 86px;
+    text-align: center;
+  }
+
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__img {
+    &_top, &_bottom {
+      position: absolute;
+      display: flex;
+    }
+
+    &_top {
+      top: 46px;
+      width: 100%;
+      left: 5px;
+      z-index: 2;
+      justify-content: center;
+      height: 270px;
+
+    }
+
+    &_bottom {
+      align-items: end;
+      bottom: 256px;
+      left: 0;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  &__img-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__image {
+    &_bone, &_ball, &_cat, &_dog {
+      width: 100%;
+      object-fit: contain;
+    }
+
+    &_ball {
+      width: 140px;
+      height: 70%;
+      transform: rotate(-105deg);
+      margin: 0 auto 0 14px;
+    }
+
+    &_bone {
+      width: 220px;
+      margin: 36px 44px 0 auto;
+    }
+
+    &_cat {
+      width: 153%;
+      max-height: 370px;
+      margin-left: -10px;
+      transform: rotate(355deg);
+    }
+
+    &_dog {
+      width: 190%;
+      max-height: 420px;
+      margin-left: -90px;
+      margin-bottom: -16px;
+      transform: rotate(7deg);
+    }
+  }
+
+  &__title, &__for-pets {
+    position: relative;
+    z-index: 2;
   }
 
   &__title {
+    position: relative;
+    z-index: 1;
+    margin: 112px 13% 34px;
+    color: $accent;
+    letter-spacing: 0.5px;
+
+    &_duplicate {
+      position: absolute;
+      z-index: -1;
+      top: 4px;
+      left: 1px;
+      color: $dark;
+    }
   }
 
   &__for-pets {
+    display: grid;
+    margin: 0 13%;
+    padding-bottom: 86px;
+    gap: 116px 20px;
+    justify-content: center;
   }
 
-  &__btn-for-cat {
+  &__for-pets-btn-container {
+  }
+
+  &__for-pets-btn {
+    @include pet-button;
+  }
+
+  &__btn-text {
+    white-space: nowrap;
   }
 
   &__cat {
   }
 
   &__text {
+    margin: 0 30px;
+    grid-column: 1/3;
+    grid-row: 1/2;
   }
 
-  &__btn-for-dog {
+  &__dog {
   }
 
   &__benefits {
   }
 }
 
-
 .benefits {
+  z-index: 1;
+  position: relative;
+  padding: 31px 16px;
+  background-color: $white;
+
   &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
   }
 
   &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 15px;
+
+    b {
+      font-weight: 500;
+    }
+  }
+
+  &__text {
+  }
+}
+
+@include md {
+  .banner {
+    &__for-pets {
+      max-width: 550px;
+      gap: 52px 118px;
+      margin: 0 auto;
+      padding-bottom: 127px;
+    }
+
+    &__title {
+      margin: 174px auto 55px;
+      max-width: 583px;
+      width: 100%;
+    }
+
+    &__text {
+      max-width: fit-content;
+      margin: 0;
+    }
+
+    &__for-pets-btn {
+      padding: 20px 35px;
+    }
+
+    &__img {
+
+      &_top {
+        max-width: 770px;
+        width: 100%;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      &_bottom {
+        bottom: 41px;
+        align-items: center;
+      }
+    }
+
+    &__image {
+
+      &_bone {
+        margin: 0 5px 0 auto;
+        width: 351px;
+        transform: rotate(354deg);
+      }
+
+      &_ball {
+        width: 180px;
+        height: 70%;
+        margin: 0 auto 0 -3px;
+      }
+
+      &_cat {
+        width: 130%;
+        max-height: 100%;
+        transform: rotate(351deg);
+        margin-left: 5px;
+        margin-top: 40px;
+      }
+
+      &_dog {
+        width: 200%;
+        max-height: 100%;
+        transform: rotate(7deg);
+        margin-left: -225px;
+      }
+    }
+  }
+  .benefits {
+    padding: 46px 92px 30px;
+
+    &__list {
+      flex-wrap: wrap;
+      height: 100px;
+      gap: 25px 1px;
+    }
+  }
+}
+
+@include lg {
+  .banner {
+    &__container {
+      padding: 86px 0 60px;
+    }
+
+    .container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    &__for-pets {
+      display: flex;
+      align-items: center;
+      max-width: 100%;
+      gap: 116px;
+      padding-bottom: 117px;
+    }
+
+    &__title {
+      margin: 152px auto 55px;
+    }
+
+    &__img-container {
+
+      &_cat {
+        display: flex;
+        top: auto;
+        bottom: 0;
+      }
+
+      &_dog {
+        display: flex;
+        top: auto;
+        bottom: 0;
+      }
+    }
+
+    &__image {
+
+      &_ball {
+        width: 192px;
+        transform: rotate(358deg);
+      }
+      &_bone  {
+        width: 330px;
+        margin: -13px 7px 0 auto;
+      }
+
+      &_cat {
+        margin-left: -162px;
+      }
+      &_dog {
+        margin-bottom: 87px;
+        scale: 1.2;
+        margin-left: -112px;
+      }
+    }
+
+    &__img {
+      &_top {
+        top: 75px;
+      }
+      &_bottom {
+        bottom: -43px;
+      }
+    }
+    &__text {
+      margin-bottom: 7px;
+    }
+  }
+  .benefits {
+    border-radius: $border-radius;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+    padding: 41px 100px;
+    max-width: 1168px;
+    margin: 0 auto;
+
+    &__list {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      height: auto;
+      gap: 10px;
+    }
   }
 }

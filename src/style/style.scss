@@ -15,11 +15,11 @@ body {
   font-size: $text-size-mobile;
   font-weight: 400;
   position: relative;
+  overflow-x: hidden;
   height: 100%;
   margin: 0;
   padding: 0;
   background-color: $white;
-  overflow-x: hidden;
 }
 
 html {
@@ -68,11 +68,14 @@ h3 {
 
 .container {
   max-width: 1300px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 .cat, .dog {
-  text-transform: uppercase;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 .cat {
