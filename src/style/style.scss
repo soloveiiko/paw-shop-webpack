@@ -86,6 +86,10 @@ h3 {
   color: $dog;
 }
 
+.headline {
+  text-align: center;
+}
+
 @include md {
   html,
   body {
