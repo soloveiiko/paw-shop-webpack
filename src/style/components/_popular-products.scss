@@ -1,11 +1,14 @@
 .popular-products {
-  padding: 50px 15px;
+  max-width: 1198px;
+  margin: 0 auto;
+  overflow: hidden;
 
   &__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
-    margin: 30px 0;
+    gap: 12px 15px;
+    margin: 34px 0 44px;
+    justify-content: space-between;
   }
 
   &__item {
@@ -13,23 +16,25 @@
     border-radius: $border-radius;
     border: 1px solid $light-gray;
     padding: 15px;
-    max-width: 157px;
+    width: calc(50% - 7.5px);
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
   }
 
   &__discount, &__new {
     position: absolute;
     top: 15px;
-    left: 15px;
+    left: 16px;
     width: fit-content;
-    padding: 5px 8px;
+    padding: 5px 10px;
     border-radius: $border-radius;
+    color: $white;
   }
 
   &__discount {
-    background: $gradient;
+    border-radius: 20px;
+    background: linear-gradient(179deg, #E9A904 0%, #FFC805 100%);
   }
 
   &__new {
@@ -51,10 +56,12 @@
   &__stars-container {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
   }
 
   &__stars-range {
+    display: flex;
+    gap: 7px;
   }
 
   &__stars-count {
@@ -67,8 +74,14 @@
     justify-content: space-between;
   }
 
+  &__price-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
   &__price, &__curr-price {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
   }
 
@@ -84,7 +97,7 @@
 
   &__btn-in-basket {
     @include button;
-    padding: 10px;
+    padding: 13px 15px;
     gap: 5px;
     background-color: $accent;
     color: $white;
@@ -103,7 +116,8 @@
 
   &__btn {
     @include pet-button;
-    padding: 20px 15px;
+    gap: 12px;
+    padding: 32px 15px;
   }
 
   &__btn-title {
@@ -126,5 +140,96 @@
   }
 
   &__dog {
+  }
+}
+
+@include md {
+  .popular-products {
+
+    &__list {
+      display: flex;
+      flex-wrap: nowrap;
+      margin: 40px 0 44px;
+    }
+
+    &__item {
+      width: calc(32.7% - 5px);
+      flex-shrink: 0;
+      padding: 30px 17px;
+      gap: 25px;
+    }
+
+    &__discount, &__new {
+      top: 16px;
+      left: 20.5px;
+      padding: 8px 11px;
+    }
+
+    &__stars-container {
+      margin-top: 10px;
+    }
+
+    &__stars-range {
+      gap: 6px;
+    }
+
+    &__price-container {
+      margin-top: -7px;
+    }
+
+    &__price, &__curr-price {
+      font-size: 22px;
+    }
+
+    &__prev-price {
+      font-size: 16px;
+    }
+
+    &__btn-in-basket {
+      font-size: 22px;
+      padding: 8px 16px;
+      gap: 17px;
+    }
+
+    &__btn {
+      padding: 28px 26px 28px 31px;
+      gap: 10px;
+    }
+
+    &__btn-title {
+      font-size: 15px;
+    }
+  }
+}
+
+@include lg {
+  .popular-products {
+
+    &__list {
+      gap: 30px;
+      margin: 40px 0 53px;
+    }
+
+    &__item {
+      flex-shrink: 1;
+      padding: 19px 17px;
+      gap: 8px;
+    }
+
+    &__stars-container {
+      margin-top: 25px;
+    }
+
+    &__price-container {
+      margin-top: 12px;
+    }
+
+    &__btn-in-basket {
+      padding: 8px 22px;
+    }
+
+    &__for-pets {
+      gap: 30px;
+    }
   }
 }

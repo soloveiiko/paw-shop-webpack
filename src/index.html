@@ -1,394 +1,476 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
 <body>
 <div id="root" class="paw-shop">
-  <header class="paw-shop__header header">
-    <div class="header__container">
-      <div class="header__logo logo">
-        <img class="logo__image" src="<%= require('./images/logo/logo-dark.svg') %>" alt="Logo" />
-        <span class="logo__text">PawShop</span>
-      </div>
-      <nav class="header__menu menu">
-        <ul class="menu__list">
-          <li class="menu__item"><a href="#">For <b>cat</b></a></li>
-          <li class="menu__item"><a href="#">For <b>dog</b></a></li>
-          <li class="menu__item"><a href="#">Contacts</a></li>
-          <li class="menu__item"><a href="#">Tracking</a></li>
-        </ul>
-      </nav>
-      <a class="header__number" href="tel:1-800-055-5566">1-800-055-5566</a>
-      <div class="header__tools">
-        <div class="header__profile">
-          <img src="<%= require('./images/icons/user.svg') %>" alt="Profile">
-        </div>
-        <div class="header__basket basket">
-          <div class="basket__image">
-            <img src="<%= require('./images/icons/basket.svg') %>" alt="Basket">
-          </div>
-          <div class="basket__counter">2</div>
-          <div class="basket__price">$8</div>
-        </div>
-        <div class="header__open-toggle-menu">
-          <button class="header__open-toggle-menu-btn"></button>
-        </div>
-      </div>
-      <div class="header__toggle-menu toggle-menu">
-        <div class="toggle-menu__top-block">
-          <div class="toggle-menu__logo"><a href="#">Menu</a></div>
-          <button class="toggle-menu__close-btn">&#x2715</button>
-        </div>
-        <nav class="toggle-menu__container">
-          <ul class="toggle-menu__list">
-            <li class="toggle-menu__item"><a href="#">Home</a></li>
-            <li class="toggle-menu__item"><a href="#">For <b
-                class="toggle-menu__cat cat">cat</b></a></li>
-            <li class="toggle-menu__item"><a href="#">For <b
-                class="toggle-menu__dog dog">dog</b></a></li>
-            <li class="toggle-menu__item"><a href="#">Contacts</a></li>
-            <li class="toggle-menu__item"><a href="#">Tracking</a></li>
-          </ul>
-        </nav>
-        <a class="toggle-menu__number"
-           href="tel:1-800-055-5566">1-800-055-5566</a>
-      </div>
-    </div>
-  </header>
-  <div class="paw-shop__main-page main-page page">
-    <section class="main-page__banner banner">
-      <div class="banner__container container">
-        <div class="banner__img_top">
-          <div class="banner__img-container">
-            <img class="banner__image_ball"
-                 src="<%= require('./images/background/ball.png') %>" alt="Ball">
-          </div>
-          <div class="banner__img-container">
-            <img class="banner__image_bone"
-                 src="<%= require('./images/background/bone.png') %>" alt="Bone">
-          </div>
-        </div>
-        <h1 class="banner__title">
-          Make your pet’s life better
-          <span class="banner__title_duplicate">Make your pet’s life better</span>
-        </h1>
-        <div class="banner__for-pets">
-          <div class="banner__for-pets-btn-container btn-container">
-            <button class="banner__for-pets-btn">
-              <img src="<%= require('./images/icons/arrow.svg') %>" alt="arrow">
-              <span class="banner__btn-text">For <b class="banner__cat cat">cat</b></span>
-            </button>
-          </div>
-          <h3 class="banner__text">Toys and accessories that your pet will
-            like
-          </h3>
-          <div class="banner__for-pets-btn-container btn-container">
-            <button class="banner__for-pets-btn">
-              <span class="banner__btn-text">For <b class="banner__dog dog">dog</b></span>
-              <img src="<%= require('./images/icons/arrow.svg') %>" alt="arrow">
-            </button>
-          </div>
-        </div>
-        <div class="banner__benefits benefits">
-          <ul class="benefits__list">
-            <li class="benefits__item">
-              <img src="<%= require('./images/icons/star.svg') %>" alt="">
-              <span class="benefits__text"><b>Unique </b>products</span>
-            </li>
-            <li class="benefits__item">
-              <img src="<%= require('./images/icons/support.svg') %>" alt="">
-              <span class="benefits__text"><b>24/7 </b>support</span>
-            </li>
-            <li class="benefits__item">
-              <img src="<%= require('./images/icons/return.svg') %>" alt="">
-              <span class="benefits__text"><b>Free return </b> within 15 days</span>
-            </li>
-            <li class="benefits__item"><img
-                src="<%= require('./images/icons/checkmark.svg') %>" alt="">
-              <span class="benefits__text"><b>Happy </b>pet</span>
-            </li>
-          </ul>
-        </div>
-        <div class="banner__img_bottom">
-          <div class="banner__img-container">
-            <img class="banner__image_cat"
-                 src="<%= require('./images/background/cat.png') %>" alt="Cat">
-          </div>
-          <div class="banner__img-container">
-            <img class="banner__image_dog"
-                 src="<%= require('./images/background/dog.png') %>" alt="Dog">
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="main-page__special-offer special-offer">
-      <div class="special-offer__container container">
-        <div class="special-offer__slider">
-          <div class="special-offer__slide">
-            <img class="special-offer__mobile-img" src="<%= require('./images/background/special-offer.png') %>"
-                 alt="Slide">
-            <img class="special-offer__tablet-img" src="<%= require('./images/background/special-offer-tablet.png') %>"
-                 alt="Slide">
-            <img class="special-offer__img" src="<%= require('./images/background/cart-transparent.png') %>"
-                 alt="Special Offer">
-            <div class="special-offer__information">
-              <h1 class="special-offer__title"><span class="special-offer__title-item"><span
-                  class="special-offer__marker">FREE </span>SHIPPING</span>
-                <span class="special-offer__duplicate-title"><span>FREE </span>SHIPPING</span></h1>
-              <h3 class="special-offer__text">Go to your shopping cart and use promocode <span>FREESHIPPING</span></h3>
+    <header class="paw-shop__header header">
+        <div class="header__container">
+            <div class="header__logo logo">
+                <img class="logo__image" src="<%= require('./images/logo/logo-dark.svg') %>" alt="Logo"/>
+                <span class="logo__text">PawShop</span>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="main-page__popular-products popular-products">
-      <h2 class="popular-products__headline headline">Popular products</h2>
-      <div class="popular-products__list">
-        <div class="popular-products__item">
-          <div class="popular-products__discount">-50%</div>
-          <div class="popular-products__new">-50%</div>
-          <div class="popular-products__img-container">
-            <img class="popular-products__image"
-                 src="<%= require('./images/products/toy1.jpg') %>" alt="Product">
-          </div>
-          <div class="popular-products__title">Ball for a dog «Denta Fun» d=5 см
-            (rubber)
-          </div>
-          <div class="popular-products__stars-container">
-            <div class="popular-products__stars-range">
-              <img src="<%= require('./images/icons/stars.svg') %>" alt="Star">
-              <img src="<%= require('./images/icons/stars.svg') %>" alt="Star">
-              <img src="<%= require('./images/icons/stars.svg') %>" alt="Star">
-              <img src="<%= require('./images/icons/stars.svg') %>" alt="Star">
-              <img src="<%= require('./images/icons/stars.svg') %>" alt="Star">
+            <nav class="header__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#">For <b>cat</b></a></li>
+                    <li class="menu__item"><a href="#">For <b>dog</b></a></li>
+                    <li class="menu__item"><a href="#">Contacts</a></li>
+                    <li class="menu__item"><a href="#">Tracking</a></li>
+                </ul>
+            </nav>
+            <a class="header__number" href="tel:1-800-055-5566">1-800-055-5566</a>
+            <div class="header__tools">
+                <div class="header__profile">
+                    <img src="<%= require('./images/icons/user.svg') %>" alt="Profile">
+                </div>
+                <div class="header__basket basket">
+                    <div class="basket__image">
+                        <img src="<%= require('./images/icons/basket.svg') %>" alt="Basket">
+                    </div>
+                    <div class="basket__counter">2</div>
+                    <div class="basket__price">$8</div>
+                </div>
+                <div class="header__open-toggle-menu">
+                    <button class="header__open-toggle-menu-btn"></button>
+                </div>
             </div>
-            <div class="popular-products__stars-count">2</div>
-          </div>
-          <div class="popular-products__price-container">
-            <div class="popular-products__price">$4</div>
-            <div class="popular-products__curr-price">$4</div>
-            <div class="popular-products__prev-price">$4</div>
-            <div class="popular-products__btn-in-basket-container btn-container">
-              <button class="popular-products__btn-in-basket">
-                +<img src="<%= require('./images/icons/basket.svg') %>" alt="In Basket">
-              </button>
+            <div class="header__toggle-menu toggle-menu">
+                <div class="toggle-menu__top-block">
+                    <div class="toggle-menu__logo"><a href="#">Menu</a></div>
+                    <button class="toggle-menu__close-btn">&#x2715</button>
+                </div>
+                <nav class="toggle-menu__container">
+                    <ul class="toggle-menu__list">
+                        <li class="toggle-menu__item"><a href="#">Home</a></li>
+                        <li class="toggle-menu__item"><a href="#">For <b
+                                class="toggle-menu__cat cat">cat</b></a></li>
+                        <li class="toggle-menu__item"><a href="#">For <b
+                                class="toggle-menu__dog dog">dog</b></a></li>
+                        <li class="toggle-menu__item"><a href="#">Contacts</a></li>
+                        <li class="toggle-menu__item"><a href="#">Tracking</a></li>
+                    </ul>
+                </nav>
+                <a class="toggle-menu__number"
+                   href="tel:1-800-055-5566">1-800-055-5566</a>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="popular-products__for-pets">
-        <div class="popular-products__btn-for-cat btn-container">
-          <button class="popular-products__btn">
+    </header>
+    <div class="paw-shop__main-page main-page page">
+        <section class="main-page__banner banner">
+            <div class="banner__container container">
+                <div class="banner__img_top">
+                    <div class="banner__img-container">
+                        <img class="banner__image_ball"
+                             src="<%= require('./images/background/ball.png') %>" alt="Ball">
+                    </div>
+                    <div class="banner__img-container">
+                        <img class="banner__image_bone"
+                             src="<%= require('./images/background/bone.png') %>" alt="Bone">
+                    </div>
+                </div>
+                <h1 class="banner__title">
+                    Make your pet’s life better
+                    <span class="banner__title_duplicate">Make your pet’s life better</span>
+                </h1>
+                <div class="banner__for-pets">
+                    <div class="banner__for-pets-btn-container btn-container">
+                        <button class="banner__for-pets-btn">
+                            <img src="<%= require('./images/icons/arrow.svg') %>" alt="arrow">
+                            <span class="banner__btn-text">For <b class="banner__cat cat">cat</b></span>
+                        </button>
+                    </div>
+                    <h3 class="banner__text">Toys and accessories that your pet will
+                        like
+                    </h3>
+                    <div class="banner__for-pets-btn-container btn-container">
+                        <button class="banner__for-pets-btn">
+                            <span class="banner__btn-text">For <b class="banner__dog dog">dog</b></span>
+                            <img src="<%= require('./images/icons/arrow.svg') %>" alt="arrow">
+                        </button>
+                    </div>
+                </div>
+                <div class="banner__benefits benefits">
+                    <ul class="benefits__list">
+                        <li class="benefits__item">
+                            <img src="<%= require('./images/icons/star.svg') %>" alt="">
+                            <span class="benefits__text"><b>Unique </b>products</span>
+                        </li>
+                        <li class="benefits__item">
+                            <img src="<%= require('./images/icons/support.svg') %>" alt="">
+                            <span class="benefits__text"><b>24/7 </b>support</span>
+                        </li>
+                        <li class="benefits__item">
+                            <img src="<%= require('./images/icons/return.svg') %>" alt="">
+                            <span class="benefits__text"><b>Free return </b> within 15 days</span>
+                        </li>
+                        <li class="benefits__item"><img
+                                src="<%= require('./images/icons/checkmark.svg') %>" alt="">
+                            <span class="benefits__text"><b>Happy </b>pet</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="banner__img_bottom">
+                    <div class="banner__img-container">
+                        <img class="banner__image_cat"
+                             src="<%= require('./images/background/cat.png') %>" alt="Cat">
+                    </div>
+                    <div class="banner__img-container">
+                        <img class="banner__image_dog"
+                             src="<%= require('./images/background/dog.png') %>" alt="Dog">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-page__special-offer special-offer">
+            <div class="special-offer__container container">
+                <div class="special-offer__slider">
+                    <div class="special-offer__slide">
+                        <img class="special-offer__mobile-img"
+                             src="<%= require('./images/background/special-offer.png') %>"
+                             alt="Slide">
+                        <img class="special-offer__tablet-img"
+                             src="<%= require('./images/background/special-offer-tablet.png') %>"
+                             alt="Slide">
+                        <img class="special-offer__img" src="<%= require('./images/background/cart-transparent.png') %>"
+                             alt="Special Offer">
+                        <div class="special-offer__information">
+                            <h1 class="special-offer__title"><span class="special-offer__title-item"><span
+                                    class="special-offer__marker">FREE </span>SHIPPING</span>
+                                <span class="special-offer__duplicate-title"><span>FREE </span>SHIPPING</span></h1>
+                            <h3 class="special-offer__text">Go to your shopping cart and use promocode <span>FREESHIPPING</span>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-page__popular-products popular-products">
+            <h2 class="popular-products__headline headline">Popular products</h2>
+            <div class="popular-products__list">
+                <div class="popular-products__item">
+                    <div class="popular-products__img-container">
+                        <img class="popular-products__image"
+                             src="<%= require('./images/products/toy1.jpg') %>" alt="Product">
+                    </div>
+                    <div class="popular-products__title">Ball for a dog «Denta Fun» d=5 см
+                        (rubber)
+                    </div>
+                    <div class="popular-products__stars-container">
+                        <div class="popular-products__stars-range">
+                            <img src="<%= require('./images/icons/stars.svg') %>" alt="Star">
+                            <img src="<%= require('./images/icons/stars.svg') %>" alt="Star">
+                            <img src="<%= require('./images/icons/stars.svg') %>" alt="Star">
+                            <img src="<%= require('./images/icons/stars.svg') %>" alt="Star">
+                            <img src="<%= require('./images/icons/stars.svg') %>" alt="Star">
+                        </div>
+                        <div class="popular-products__stars-count">2</div>
+                    </div>
+                    <div class="popular-products__price-container">
+                        <div class="popular-products__price">$4</div>
+                        <div class="popular-products__btn-in-basket-container btn-container">
+                            <button class="popular-products__btn-in-basket">
+                                +<img src="<%= require('./images/icons/basket.svg') %>" alt="In Basket">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-products__item">
+                    <div class="popular-products__discount">-50%</div>
+                    <div class="popular-products__img-container">
+                        <img class="popular-products__image"
+                             src="<%= require('./images/products/toy1.jpg') %>" alt="Product">
+                    </div>
+                    <div class="popular-products__title">Chew toy Interactive Stress Relief Dog Toy
+                    </div>
+                    <div class="popular-products__stars-container">
+                        <div class="popular-products__stars-range">
+                            <img src="<%= require('./images/icons/stars.svg') %>" alt="Star">
+                            <img src="<%= require('./images/icons/stars.svg') %>" alt="Star">
+                            <img src="<%= require('./images/icons/stars.svg') %>" alt="Star">
+                            <img src="<%= require('./images/icons/stars.svg') %>" alt="Star">
+                            <img src="<%= require('./images/icons/stars.svg') %>" alt="Star">
+                        </div>
+                        <div class="popular-products__stars-count">5</div>
+                    </div>
+                    <div class="popular-products__price-container">
+                        <div class="popular-products__price-wrapper">
+                            <div class="popular-products__curr-price">$5</div>
+                            <div class="popular-products__prev-price">$10</div>
+                        </div>
+                        <div class="popular-products__btn-in-basket-container btn-container">
+                            <button class="popular-products__btn-in-basket">
+                                +<img src="<%= require('./images/icons/basket.svg') %>" alt="In Basket">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-products__item">
+                    <div class="popular-products__new">New</div>
+                    <div class="popular-products__img-container">
+                        <img class="popular-products__image"
+                             src="<%= require('./images/products/toy1.jpg') %>" alt="Product">
+                    </div>
+                    <div class="popular-products__title">Mammoth Cottonblend 3 Knot Dog Toy
+                    </div>
+                    <div class="popular-products__stars-container">
+                        <div class="popular-products__stars-range">
+                            <img src="<%= require('./images/icons/stars.svg') %>" alt="Star">
+                            <img src="<%= require('./images/icons/stars.svg') %>" alt="Star">
+                            <img src="<%= require('./images/icons/stars.svg') %>" alt="Star">
+                            <img src="<%= require('./images/icons/stars.svg') %>" alt="Star">
+                            <img src="<%= require('./images/icons/stars.svg') %>" alt="Star">
+                        </div>
+                        <div class="popular-products__stars-count">2</div>
+                    </div>
+                    <div class="popular-products__price-container">
+                        <div class="popular-products__price">$8.5</div>
+                        <div class="popular-products__btn-in-basket-container btn-container">
+                            <button class="popular-products__btn-in-basket">
+                                +<img src="<%= require('./images/icons/basket.svg') %>" alt="In Basket">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-products__item">
+                    <div class="popular-products__img-container">
+                        <img class="popular-products__image"
+                             src="<%= require('./images/products/toy1.jpg') %>" alt="Product">
+                    </div>
+                    <div class="popular-products__title">Frisco Bird Teaser with Feathers Cat Toy
+                    </div>
+                    <div class="popular-products__stars-container">
+                        <div class="popular-products__stars-range">
+                            <img src="<%= require('./images/icons/stars.svg') %>" alt="Star">
+                            <img src="<%= require('./images/icons/stars.svg') %>" alt="Star">
+                            <img src="<%= require('./images/icons/stars.svg') %>" alt="Star">
+                            <img src="<%= require('./images/icons/stars.svg') %>" alt="Star">
+                            <img src="<%= require('./images/icons/stars.svg') %>" alt="Star">
+                        </div>
+                        <div class="popular-products__stars-count">5</div>
+                    </div>
+                    <div class="popular-products__price-container">
+                        <div class="popular-products__price">$3.42</div>
+                        <div class="popular-products__btn-in-basket-container btn-container">
+                            <button class="popular-products__btn-in-basket">
+                                +<img src="<%= require('./images/icons/basket.svg') %>" alt="In Basket">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popular-products__for-pets">
+                <div class="popular-products__btn-for-cat btn-container">
+                    <button class="popular-products__btn">
             <span class="popular-products__btn-title">
             Products for
             <span class="popular-products__cat cat">cat</span>
             </span>
-            <img src="<%= require('./images/icons/cat.svg') %>" alt="Cat"><img
-              src="<%= require('./images/icons/arrow.svg') %>" alt="Arrow">
-          </button>
-        </div>
-        <div class="popular-products__btn-for-dog btn-container">
-          <button class="popular-products__btn">
+                        <img src="<%= require('./images/icons/cat.svg') %>" alt="Cat"><img
+                            src="<%= require('./images/icons/arrow.svg') %>" alt="Arrow">
+                    </button>
+                </div>
+                <div class="popular-products__btn-for-dog btn-container">
+                    <button class="popular-products__btn">
             <span class="popular-products__btn-title">Products for
             <span class="popular-products__dog dog">dog</span>
             </span>
-            <img src="<%= require('./images/icons/dog.svg') %>" alt="Dog"><img
-              src="<%= require('./images/icons/arrow.svg') %>" alt="Arrow">
-          </button>
-        </div>
-      </div>
-    </section>
-    <section class="main-page__reviews reviews">
-      <div class="reviews__container container">
-        <h2 class="reviews__headline headline">Reviews</h2>
-        <div class="reviews__slider">
-          <div class="reviews__slide">
-            <div class="date">19.07.2022</div>
-            <div class="reviews__user">
-              <div class="reviews__username">Alex</div>
-              <div class="reviews__stars">
-                <img src="<%= require('./images/icons/stars.svg') %>"
-                     alt="Star">
-                <img src="<%= require('./images/icons/stars.svg') %>"
-                     alt="Star">
-                <img src="<%= require('./images/icons/stars.svg') %>"
-                     alt="Star">
-                <img src="<%= require('./images/icons/stars.svg') %>"
-                     alt="Star">
-                <img src="<%= require('./images/icons/stars.svg') %>"
-                     alt="Star">
-              </div>
+                        <img src="<%= require('./images/icons/dog.svg') %>" alt="Dog"><img
+                            src="<%= require('./images/icons/arrow.svg') %>" alt="Arrow">
+                    </button>
+                </div>
             </div>
-            <div class="reviews__body">Dog loved this thing even before I got it
-              completely out of the box. Within 1 hr.
-              cover was torn and inside exposed. Tossing, chewing and shaking
-              went on for an hour straight. Removed it
-              from her mouth and all goes back to good. Might have been a one
-              off, but be watchful. Would buy again.
+        </section>
+        <section class="main-page__reviews reviews">
+            <div class="reviews__container container">
+                <h2 class="reviews__headline headline">Reviews</h2>
+                <div class="reviews__slider">
+                    <div class="reviews__slide">
+                        <div class="date">19.07.2022</div>
+                        <div class="reviews__user">
+                            <div class="reviews__username">Alex</div>
+                            <div class="reviews__stars">
+                                <img src="<%= require('./images/icons/stars.svg') %>"
+                                     alt="Star">
+                                <img src="<%= require('./images/icons/stars.svg') %>"
+                                     alt="Star">
+                                <img src="<%= require('./images/icons/stars.svg') %>"
+                                     alt="Star">
+                                <img src="<%= require('./images/icons/stars.svg') %>"
+                                     alt="Star">
+                                <img src="<%= require('./images/icons/stars.svg') %>"
+                                     alt="Star">
+                            </div>
+                        </div>
+                        <div class="reviews__body">Dog loved this thing even before I got it
+                            completely out of the box. Within 1 hr.
+                            cover was torn and inside exposed. Tossing, chewing and shaking
+                            went on for an hour straight. Removed it
+                            from her mouth and all goes back to good. Might have been a one
+                            off, but be watchful. Would buy again.
+                        </div>
+                        <div class="reviews__images">
+                            <img class="reviews__image"
+                                 src="<%= require('./images/reviews/review.jpg') %>"
+                                 alt="Review">
+                            <img class="reviews__image"
+                                 src="<%= require('./images/reviews/review.jpg') %>"
+                                 alt="Review">
+                            <img class="reviews__image"
+                                 src="<%= require('./images/reviews/review.jpg') %>"
+                                 alt="Review">
+                            <span class="reviews__show-more-image">+5</span>
+                        </div>
+                        <a href="#" class="reviews__link">See the product
+                            <img src="<%= require('./images/icons/arrow.svg') %>" alt="Arrow">
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="reviews__images">
-              <img class="reviews__image"
-                   src="<%= require('./images/reviews/review.jpg') %>"
-                   alt="Review">
-              <img class="reviews__image"
-                   src="<%= require('./images/reviews/review.jpg') %>"
-                   alt="Review">
-              <img class="reviews__image"
-                   src="<%= require('./images/reviews/review.jpg') %>"
-                   alt="Review">
-              <span class="reviews__show-more-image">+5</span>
+        </section>
+        <section class="main-page__about-us about-us">
+            <div class="about-us__container container">
+                <h2 class="about-us__headline headline">About us</h2>
+                <div class="about-us__text-container">
+                    <img class="about-us__image"
+                         src="<%= require('./images/pets/dog.jpg') %>" alt="Dog">
+                    <h3 class="about-us__title">
+                        <b>Playtime</b> is your pup’s <b>favorite time</b>. Your dog needs
+                        play for his overall health and
+                        happiness.
+                    </h3>
+                    <p> Dogs are pack
+                        animals, requiring physical play with you and other dogs. One of the
+                        most important benefits of doggie play
+                        is that it’s a bonding opportunity for you and your canine
+                        companion. Another benefit of pup play is
+                        exercise.</p>
+                    <p> Playtime is also a great opportunity for puppy teaching moments.
+                        You can train your dog through play, and
+                        with dog toys. We carries the best dog toys from top dog toy makers
+                        like USA Bones & Chews, Nylabone, and
+                        KONG. There are dog balls and dog fetch toys, dog chew toys, plush
+                        dog toys, interactive dog toys, dog
+                        puzzles and rope and tug dog toys for your pup to play with. </p>
+                    <p>Plush dog toys are great for canine’s seeking comfort as they
+                        can ease some pup anxiety. Interactive dog toys help stimulate your
+                        pup’s mind, which is the key to a
+                        fulfilling life. If your pup loves to chew on your prized
+                        possessions, dog chew toys can come to the
+                        rescue.</p>
+                </div>
+                <div class="about-us__text-container">
+                    <h3 class="about-us__title">
+                        Cats <b>love to play</b>, but did you know that playtime is vital
+                        activity for kittens and adult cats
+                        too?
+                    </h3>
+                    <p>Here you’ll find the best cat toys for every type of cat
+                        personality. For the active cat who’s
+                        agenda-driven, toys provide a much-needed physical release. </p>
+                    <p>Having this type of cat personality means your cat loves to hunt,
+                        jump
+                        and run. If your feline friend matches this description, they’ll
+                        most likely prefer a playtime that includes
+                        cat ball toys, cat feather wands, and cat wands & teaser toys. Cat
+                        balls and chaser toys allow cats to swat,
+                        chase and pounce—all their favorite activities.</p>
+                    <p>The best teaser toys are made with bright colors or sound
+                        effects to help entice curious cats. Teaser toys allow you to lift
+                        the object of desire above the cat where
+                        they can jump to reach. In addition, cat tunnels, cat chew toys and
+                        catnip toys are playtime favorites that
+                        your cat will love because they each bring something new to the
+                        table.</p>
+                    <img class="about-us__image"
+                         src="<%= require('./images/pets/cat.jpg') %>" alt="Cat">
+                </div>
             </div>
-            <a href="#" class="reviews__link">See the product
-              <img src="<%= require('./images/icons/arrow.svg') %>" alt="Arrow">
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="main-page__about-us about-us">
-      <div class="about-us__container container">
-        <h2 class="about-us__headline headline">About us</h2>
-        <div class="about-us__text-container">
-          <img class="about-us__image"
-               src="<%= require('./images/pets/dog.jpg') %>" alt="Dog">
-          <h3 class="about-us__title">
-            <b>Playtime</b> is your pup’s <b>favorite time</b>. Your dog needs
-            play for his overall health and
-            happiness.
-          </h3>
-          <p> Dogs are pack
-            animals, requiring physical play with you and other dogs. One of the
-            most important benefits of doggie play
-            is that it’s a bonding opportunity for you and your canine
-            companion. Another benefit of pup play is
-            exercise.</p>
-          <p> Playtime is also a great opportunity for puppy teaching moments.
-            You can train your dog through play, and
-            with dog toys. We carries the best dog toys from top dog toy makers
-            like USA Bones & Chews, Nylabone, and
-            KONG. There are dog balls and dog fetch toys, dog chew toys, plush
-            dog toys, interactive dog toys, dog
-            puzzles and rope and tug dog toys for your pup to play with. </p>
-          <p>Plush dog toys are great for canine’s seeking comfort as they
-            can ease some pup anxiety. Interactive dog toys help stimulate your
-            pup’s mind, which is the key to a
-            fulfilling life. If your pup loves to chew on your prized
-            possessions, dog chew toys can come to the
-            rescue.</p>
-        </div>
-        <div class="about-us__text-container">
-          <h3 class="about-us__title">
-            Cats <b>love to play</b>, but did you know that playtime is vital
-            activity for kittens and adult cats
-            too?
-          </h3>
-          <p>Here you’ll find the best cat toys for every type of cat
-            personality. For the active cat who’s
-            agenda-driven, toys provide a much-needed physical release. </p>
-          <p>Having this type of cat personality means your cat loves to hunt,
-            jump
-            and run. If your feline friend matches this description, they’ll
-            most likely prefer a playtime that includes
-            cat ball toys, cat feather wands, and cat wands & teaser toys. Cat
-            balls and chaser toys allow cats to swat,
-            chase and pounce—all their favorite activities.</p>
-          <p>The best teaser toys are made with bright colors or sound
-            effects to help entice curious cats. Teaser toys allow you to lift
-            the object of desire above the cat where
-            they can jump to reach. In addition, cat tunnels, cat chew toys and
-            catnip toys are playtime favorites that
-            your cat will love because they each bring something new to the
-            table.</p>
-          <img class="about-us__image"
-               src="<%= require('./images/pets/cat.jpg') %>" alt="Cat">
-        </div>
-      </div>
-    </section>
-  </div>
-  <footer class="paw-shop__footer footer">
-    <div class="footer__subscribe subscribe">
-      <img class="subscribe__background_top"
-           src="<%= require('./images/background/subscribe1.png') %>" alt="Toy">
-      <h3 class="subscribe__title">Get the latest news and promotions. No spam,
-        just a few emails per year.
-      </h3>
-      <div class="subscribe__input-container">
-        <input type="email" placeholder="Your e-mail">
-        <button class="subscribe__btn">Subscribe</button>
-        <img class="subscribe__background_top"
-             src="<%= require('./images/background/subscribe2.png') %>"
-             alt="Toy">
-      </div>
+        </section>
     </div>
-    <div class="footer__body">
-      <div class="footer__top">
-        <div class="footer__logo logo">
-          <img class="logo__image"
-               src="<%= require('./images/logo/logo-dark.svg') %>" alt="Logo">
-          PawShop
+    <footer class="paw-shop__footer footer">
+        <div class="footer__subscribe subscribe">
+            <img class="subscribe__background_top"
+                 src="<%= require('./images/background/subscribe1.png') %>" alt="Toy">
+            <h3 class="subscribe__title">Get the latest news and promotions. No spam,
+                just a few emails per year.
+            </h3>
+            <div class="subscribe__input-container">
+                <input type="email" placeholder="Your e-mail">
+                <button class="subscribe__btn">Subscribe</button>
+                <img class="subscribe__background_top"
+                     src="<%= require('./images/background/subscribe2.png') %>"
+                     alt="Toy">
+            </div>
         </div>
-        <div class="footer__number">
-          <img src="<%= require('./images/icons/email.svg') %>" alt="Number">
-          <a href="tel:1-800-055-5566">1-800-055-5566</a>
+        <div class="footer__body">
+            <div class="footer__top">
+                <div class="footer__logo logo">
+                    <img class="logo__image"
+                         src="<%= require('./images/logo/logo-dark.svg') %>" alt="Logo">
+                    PawShop
+                </div>
+                <div class="footer__number">
+                    <img src="<%= require('./images/icons/email.svg') %>" alt="Number">
+                    <a href="tel:1-800-055-5566">1-800-055-5566</a>
+                </div>
+                <div class="footer__social-network social-network">
+                    <ul class="social-network__list">
+                        <li class="social-network__item"><a href="#"> <img
+                                src="<%= require('./images/social-networks/insta.svg') %>"
+                                alt="Instagram"></a></li>
+                        <li class="social-network__item"><a href="#"> <img
+                                src="<%= require('./images/social-networks/facebook.svg') %>"
+                                alt="Facebook"></a></li>
+                        <li class="social-network__item"><a href="#"> <img
+                                src="<%= require('./images/social-networks/twitter.svg') %>"
+                                alt="Twitter"></a></li>
+                    </ul>
+                </div>
+                <nav class="footer__menu">
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">Home</li>
+                        <li class="footer__menu-item">Cat supplies</li>
+                        <li class="footer__menu-item">Dog supplies</li>
+                        <li class="footer__menu-item">Contacts</li>
+                        <li class="footer__menu-item">Tracking</li>
+                        <li class="footer__menu-item">Terms of Service</li>
+                        <li class="footer__menu-item">Refund policy</li>
+                        <li class="footer__menu-item">Privacy policy</li>
+                        <li class="footer__menu-item">Shipping policy</li>
+                        <li class="footer__menu-item">FAQ</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__bottom" `>
+                <div class="footer__cards cards">
+                    <ul class="cards__list">
+                        <li class="cards__item"><img
+                                src="<%= require('./images/cards/googlepay.jpg') %>" alt="">
+                        </li>
+                        <li class="cards__item"><img
+                                src="<%= require('./images/cards/applepay.jpg') %>" alt="">
+                        </li>
+                        <li class="cards__item"><img
+                                src="<%= require('./images/cards/mastercard.jpg') %>"
+                                alt=""></li>
+                        <li class="cards__item"><img
+                                src="<%= require('./images/cards/visa.jpg') %>" alt=""></li>
+                        <li class="cards__item"><img
+                                src="<%= require('./images/cards/visa-1.jpg') %>" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__copyright">
+                    Copyright © 2022. All Rights Reserved by SleepGo
+                </div>
+            </div>
         </div>
-        <div class="footer__social-network social-network">
-          <ul class="social-network__list">
-            <li class="social-network__item"><a href="#"> <img
-                src="<%= require('./images/social-networks/insta.svg') %>"
-                alt="Instagram"></a></li>
-            <li class="social-network__item"><a href="#"> <img
-                src="<%= require('./images/social-networks/facebook.svg') %>"
-                alt="Facebook"></a></li>
-            <li class="social-network__item"><a href="#"> <img
-                src="<%= require('./images/social-networks/twitter.svg') %>"
-                alt="Twitter"></a></li>
-          </ul>
-        </div>
-        <nav class="footer__menu">
-          <ul class="footer__menu-list">
-            <li class="footer__menu-item">Home</li>
-            <li class="footer__menu-item">Cat supplies</li>
-            <li class="footer__menu-item">Dog supplies</li>
-            <li class="footer__menu-item">Contacts</li>
-            <li class="footer__menu-item">Tracking</li>
-            <li class="footer__menu-item">Terms of Service</li>
-            <li class="footer__menu-item">Refund policy</li>
-            <li class="footer__menu-item">Privacy policy</li>
-            <li class="footer__menu-item">Shipping policy</li>
-            <li class="footer__menu-item">FAQ</li>
-          </ul>
-        </nav>
-      </div>
-      <div class="footer__bottom" `>
-        <div class="footer__cards cards">
-          <ul class="cards__list">
-            <li class="cards__item"><img
-                src="<%= require('./images/cards/googlepay.jpg') %>" alt="">
-            </li>
-            <li class="cards__item"><img
-                src="<%= require('./images/cards/applepay.jpg') %>" alt="">
-            </li>
-            <li class="cards__item"><img
-                src="<%= require('./images/cards/mastercard.jpg') %>"
-                alt=""></li>
-            <li class="cards__item"><img
-                src="<%= require('./images/cards/visa.jpg') %>" alt=""></li>
-            <li class="cards__item"><img
-                src="<%= require('./images/cards/visa-1.jpg') %>" alt="">
-            </li>
-          </ul>
-        </div>
-        <div class="footer__copyright">
-          Copyright © 2022. All Rights Reserved by SleepGo
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
 </div>
 </body>
 </html>

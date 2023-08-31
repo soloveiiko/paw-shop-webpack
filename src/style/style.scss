@@ -73,6 +73,10 @@ h3 {
   margin: 0 auto;
 }
 
+.popular-products, .reviews, .about-us {
+  padding: 51px 15px;
+}
+
 .cat, .dog {
   font-weight: 500;
   text-transform: uppercase;
@@ -95,6 +99,11 @@ h3 {
   body {
     font-size: $text-size;
   }
+
+  .popular-products, .reviews, .about-us {
+    padding: 80px 15px;
+  }
+
   h1 {
     @include h1-title;
   }
@@ -103,5 +112,11 @@ h3 {
   }
   h3 {
     @include h3-title;
+  }
+}
+
+@include lg {
+  .popular-products, .reviews, .about-us {
+    padding: 141px 15px;
   }
 }
