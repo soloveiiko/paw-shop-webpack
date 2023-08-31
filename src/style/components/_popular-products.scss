@@ -1,4 +1,6 @@
 .popular-products {
+  padding-right: 15px;
+  padding-left: 15px;
   max-width: 1198px;
   margin: 0 auto;
   overflow: hidden;
@@ -120,26 +122,16 @@
     padding: 32px 15px;
   }
 
-  &__btn-title {
-
-  }
-
   &__btn-for-cat {
     button {
       border: 2px solid $cat;
     }
   }
 
-  &__cat {
-  }
-
   &__btn-for-dog {
     button {
       border: 2px solid $dog;
     }
-  }
-
-  &__dog {
   }
 }
 

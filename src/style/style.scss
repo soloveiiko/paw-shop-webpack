@@ -8,6 +8,8 @@
 @import 'components/reviews';
 @import 'components/about-us';
 @import 'components/footer';
+@import 'components/arrows';
+@import 'components/dots';
 
 html,
 body {
@@ -73,8 +75,9 @@ h3 {
   margin: 0 auto;
 }
 
-.popular-products, .reviews, .about-us {
-  padding: 51px 15px;
+.popular-products, .about-us {
+  padding-top: 53px;
+  padding-bottom: 52px;
 }
 
 .cat, .dog {
@@ -100,8 +103,9 @@ h3 {
     font-size: $text-size;
   }
 
-  .popular-products, .reviews, .about-us {
-    padding: 80px 15px;
+  .popular-products, .about-us {
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 
   h1 {
@@ -116,7 +120,8 @@ h3 {
 }
 
 @include lg {
-  .popular-products, .reviews, .about-us {
-    padding: 141px 15px;
+  .popular-products, .about-us {
+    padding-top: 141px;
+    padding-bottom: 130px;
   }
 }

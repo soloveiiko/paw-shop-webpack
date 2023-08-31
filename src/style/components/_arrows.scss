@@ -1,0 +1,12 @@
+.prev-arrow, .next-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 50px;
+  width: 59px;
+  height: 59px;
+  background-color: $white;
+  cursor: pointer;
+  z-index: 10;
+}

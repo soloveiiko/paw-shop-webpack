@@ -147,6 +147,17 @@
                         </div>
                     </div>
                 </div>
+                <div class="special-offer__prev-arrow prev-arrow">
+                    <img src="<%= require('./images/icons/slider-rightarrow.svg') %>" alt="Prev">
+                </div>
+                <div class="special-offer__next-arrow next-arrow">
+                    <img src="<%= require('./images/icons/slider-rightarrow.svg') %>" alt="Next">
+                </div>
+                <div class="special-offer__dots dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
             </div>
         </section>
         <section class="main-page__popular-products popular-products">
@@ -286,11 +297,82 @@
             </div>
         </section>
         <section class="main-page__reviews reviews">
+            <div class="reviews__background">
+                <img class="reviews__background-img" src="<%= require('./images/background/karsten.png') %>"
+                     alt="Karsten">
+            </div>
             <div class="reviews__container container">
                 <h2 class="reviews__headline headline">Reviews</h2>
                 <div class="reviews__slider">
                     <div class="reviews__slide">
-                        <div class="date">19.07.2022</div>
+                        <div class="reviews__date">19.07.2022</div>
+                        <div class="reviews__user">
+                            <div class="reviews__username">Alex</div>
+                            <div class="reviews__stars">
+                                <img src="<%= require('./images/icons/stars.svg') %>"
+                                     alt="Star">
+                                <img src="<%= require('./images/icons/stars.svg') %>"
+                                     alt="Star">
+                                <img src="<%= require('./images/icons/stars.svg') %>"
+                                     alt="Star">
+                                <img src="<%= require('./images/icons/stars.svg') %>"
+                                     alt="Star">
+                                <img src="<%= require('./images/icons/stars.svg') %>"
+                                     alt="Star">
+                            </div>
+                        </div>
+                        <div class="reviews__body">Dog loved this thing even before I got it completely out of the box.
+                            Within 1 hr. cover was torn and inside exposed. Tossing, chewing and shaking went on for an
+                            hour straight. Removed it from her mouth and all goes back to good. Might have been a one
+                            off, but be watchful. Would buy again.
+                        </div>
+                        <div class="reviews__images">
+                            <div class="reviews__img-container">
+                                <img class="reviews__image"
+                                     src="<%= require('./images/reviews/review.jpg') %>"
+                                     alt="Review">
+                            </div>
+                            <div class="reviews__img-container">
+                                <img class="reviews__image"
+                                     src="<%= require('./images/reviews/review.jpg') %>"
+                                     alt="Review">
+                            </div>
+                            <span class="reviews__show-more-image">+5</span>
+                        </div>
+                        <a href="#" class="reviews__link">See the product
+                            <img src="<%= require('./images/icons/arrow-accent.svg') %>" alt="Arrow">
+                        </a>
+                    </div>
+                    <div class="reviews__slide">
+                        <div class="reviews__date">19.07.2022</div>
+                        <div class="reviews__user">
+                            <div class="reviews__username">Alex</div>
+                            <div class="reviews__stars">
+                                <img src="<%= require('./images/icons/stars.svg') %>"
+                                     alt="Star">
+                                <img src="<%= require('./images/icons/stars.svg') %>"
+                                     alt="Star">
+                                <img src="<%= require('./images/icons/stars.svg') %>"
+                                     alt="Star">
+                                <img src="<%= require('./images/icons/stars.svg') %>"
+                                     alt="Star">
+                                <img src="<%= require('./images/icons/stars.svg') %>"
+                                     alt="Star">
+                            </div>
+                        </div>
+                        <div class="reviews__body">Dog loved this thing even before I got it
+                            completely out of the box. Within 1 hr.
+                            cover was torn and inside exposed. Tossing, chewing and shaking
+                            went on for an hour straight. Removed it
+                            from her mouth and all goes back to good. Might have been a one
+                            off, but be watchful. Would buy again.
+                        </div>
+                        <a href="#" class="reviews__link">See the product
+                            <img src="<%= require('./images/icons/arrow-accent.svg') %>" alt="Arrow">
+                        </a>
+                    </div>
+                    <div class="reviews__slide">
+                        <div class="reviews__date">19.07.2022</div>
                         <div class="reviews__user">
                             <div class="reviews__username">Alex</div>
                             <div class="reviews__stars">
@@ -314,21 +396,36 @@
                             off, but be watchful. Would buy again.
                         </div>
                         <div class="reviews__images">
-                            <img class="reviews__image"
-                                 src="<%= require('./images/reviews/review.jpg') %>"
-                                 alt="Review">
-                            <img class="reviews__image"
-                                 src="<%= require('./images/reviews/review.jpg') %>"
-                                 alt="Review">
-                            <img class="reviews__image"
-                                 src="<%= require('./images/reviews/review.jpg') %>"
-                                 alt="Review">
+                            <div class="reviews__img-container">
+                                <img class="reviews__image"
+                                     src="<%= require('./images/reviews/review.jpg') %>"
+                                     alt="Review">
+                            </div>
+                            <div class="reviews__img-container">
+                                <img class="reviews__image"
+                                     src="<%= require('./images/reviews/review.jpg') %>"
+                                     alt="Review">
+                            </div>
                             <span class="reviews__show-more-image">+5</span>
                         </div>
                         <a href="#" class="reviews__link">See the product
-                            <img src="<%= require('./images/icons/arrow.svg') %>" alt="Arrow">
+                            <img src="<%= require('./images/icons/arrow-accent.svg') %>" alt="Arrow">
                         </a>
                     </div>
+                </div>
+                <div class="reviews__prev-arrow prev-arrow">
+                    <img src="<%= require('./images/icons/slider-rightarrow.svg') %>" alt="Prev">
+                </div>
+                <div class="reviews__next-arrow next-arrow">
+                    <img src="<%= require('./images/icons/slider-rightarrow.svg') %>" alt="Next">
+                </div>
+                <div class="reviews__dots dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
                 </div>
             </div>
         </section>
