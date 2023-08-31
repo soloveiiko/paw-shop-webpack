@@ -4,6 +4,7 @@
   max-width: 1198px;
   margin: 0 auto;
   overflow: hidden;
+  padding-bottom: 52px;
 
   &__list {
     display: flex;
@@ -137,6 +138,7 @@
 
 @include md {
   .popular-products {
+    padding-bottom: 80px;
 
     &__list {
       display: flex;
@@ -196,6 +198,7 @@
 
 @include lg {
   .popular-products {
+    padding-bottom: 130px;
 
     &__list {
       gap: 30px;
