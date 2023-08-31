@@ -501,15 +501,19 @@
     </div>
     <footer class="paw-shop__footer footer">
         <div class="footer__subscribe subscribe">
-            <img class="subscribe__background_top"
-                 src="<%= require('./images/background/subscribe1.png') %>" alt="Toy">
+            <div class="subscribe__img-container_top">
+                <img class="subscribe__background"
+                     src="<%= require('./images/background/subscribe1.png') %>" alt="Toy">
+            </div>
             <h3 class="subscribe__title">Get the latest news and promotions. No spam,
                 just a few emails per year.
             </h3>
             <div class="subscribe__input-container">
                 <input type="email" placeholder="Your e-mail">
                 <button class="subscribe__btn">Subscribe</button>
-                <img class="subscribe__background_top"
+            </div>
+            <div class="subscribe__img-container_bottom">
+                <img class="subscribe__background"
                      src="<%= require('./images/background/subscribe2.png') %>"
                      alt="Toy">
             </div>
@@ -518,12 +522,12 @@
             <div class="footer__top">
                 <div class="footer__logo logo">
                     <img class="logo__image"
-                         src="<%= require('./images/logo/logo-dark.svg') %>" alt="Logo">
+                         src="<%= require('./images/logo/logo-white.svg') %>" alt="Logo">
                     PawShop
                 </div>
-                <div class="footer__number">
+                <div class="footer__number-wrapper">
                     <img src="<%= require('./images/icons/email.svg') %>" alt="Number">
-                    <a href="tel:1-800-055-5566">1-800-055-5566</a>
+                    <a class="footer__number" href="tel:1-800-055-5566">1-800-055-5566</a>
                 </div>
                 <div class="footer__social-network social-network">
                     <ul class="social-network__list">
@@ -556,19 +560,19 @@
             <div class="footer__bottom" `>
                 <div class="footer__cards cards">
                     <ul class="cards__list">
-                        <li class="cards__item"><img
-                                src="<%= require('./images/cards/googlepay.jpg') %>" alt="">
+                        <li class="cards__item"><img class="cards__image"
+                                                     src="<%= require('./images/cards/googlepay.jpg') %>" alt="">
                         </li>
-                        <li class="cards__item"><img
-                                src="<%= require('./images/cards/applepay.jpg') %>" alt="">
+                        <li class="cards__item"><img class="cards__image"
+                                                     src="<%= require('./images/cards/applepay.jpg') %>" alt="">
                         </li>
-                        <li class="cards__item"><img
-                                src="<%= require('./images/cards/mastercard.jpg') %>"
-                                alt=""></li>
-                        <li class="cards__item"><img
-                                src="<%= require('./images/cards/visa.jpg') %>" alt=""></li>
-                        <li class="cards__item"><img
-                                src="<%= require('./images/cards/visa-1.jpg') %>" alt="">
+                        <li class="cards__item"><img class="cards__image"
+                                                     src="<%= require('./images/cards/mastercard.jpg') %>"
+                                                     alt=""></li>
+                        <li class="cards__item"><img class="cards__image"
+                                                     src="<%= require('./images/cards/visa.jpg') %>" alt=""></li>
+                        <li class="cards__item"><img class="cards__image"
+                                                     src="<%= require('./images/cards/visa-1.jpg') %>" alt="">
                         </li>
                     </ul>
                 </div>
