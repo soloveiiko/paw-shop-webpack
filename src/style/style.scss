@@ -1,15 +1,16 @@
 @import 'additional/variables';
 @import 'additional/mixins';
 @import 'additional/fonts';
-@import 'components/header';
+@import 'components/about-us';
+@import 'components/arrows';
 @import 'components/banner';
-@import 'components/special-offer';
+@import 'components/dots';
+@import 'components/footer';
+@import 'components/header';
 @import 'components/popular-products';
 @import 'components/reviews';
-@import 'components/about-us';
-@import 'components/footer';
-@import 'components/arrows';
-@import 'components/dots';
+@import 'components/special-offer';
+@import 'components/subscribe';
 
 html,
 body {
@@ -69,14 +70,14 @@ h3 {
 }
 
 .container {
-  max-width: 1300px;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 1300rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
   margin: 0 auto;
 }
 
 .popular-products, .about-us {
-  padding-top: 53px;
+  padding-top: 53rem;
 }
 
 .cat, .dog {
@@ -102,13 +103,12 @@ h3 {
     font-size: $text-size-tablet;
   }
 
-
   * {
     font-size: $simple-text-size;
   }
 
   .popular-products, .about-us {
-    padding-top: 80px;
+    padding-top: 80rem;
   }
 
   h1 {
@@ -128,6 +128,6 @@ h3 {
     font-size: $text-size-desktop;
   }
   .popular-products, .about-us {
-    padding-top: 141px;
+    padding-top: 141rem;
   }
 }

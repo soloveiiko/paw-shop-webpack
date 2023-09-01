@@ -2,25 +2,20 @@
   background: linear-gradient(180deg, #5F23B4 0%, #4E1D94 100%);
 
   &__body {
-    padding: 50rem 18rem 49px;
-    gap: 34rem;
-    max-width: 1210px;
+    padding: 50rem 18rem 49rem;
+    max-width: 1210rem;
     margin: 0 auto;
   }
 
-  &__body, &__top, &__information {
+  &__body, &__top, &__information, &__bottom {
     display: flex;
     flex-direction: column;
+    gap: 34rem;
   }
 
   &__top {
-    gap: 34rem;
     padding-bottom: 40rem;
     border-bottom: 1rem solid rgba(255, 255, 255, 0.2);
-  }
-
-  &__information {
-    gap: 34rem;
   }
 
   &__logo {
@@ -32,8 +27,8 @@
 
   &__number-wrapper {
     display: flex;
-    gap: 14rem;
     align-items: center;
+    gap: 14rem;
   }
 
   &__number {
@@ -44,8 +39,8 @@
 
   &__menu-list {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 39rem 30rem;
     height: 248rem;
   }
@@ -53,15 +48,6 @@
   &__menu-item {
     font-size: $simple-text-size-mobile;
     color: $white;
-  }
-
-  &__bottom {
-    display: flex;
-    flex-direction: column;
-    gap: 34rem;
-  }
-
-  &__cards {
   }
 
   &__copyright {
@@ -78,93 +64,6 @@
       width: 58rem;
       height: 74rem;
     }
-  }
-}
-
-.subscribe {
-  background: linear-gradient(180deg, #893EF4 0%, #722AD8 100%);
-  overflow: hidden;
-
-  .container {
-    padding: 52rem 17px;
-  }
-
-  &__container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 29rem;
-  }
-
-  &__background {
-    width: 100%;
-  }
-
-  &__title {
-    color: $white;
-    margin: 0 18rem;
-    font-size: 17rem;
-  }
-
-  &__title, &__input-container {
-    position: relative;
-    z-index: 1;
-  }
-
-  &__img-container {
-    &_top, &_bottom {
-      width: 100%;
-      position: absolute;
-    }
-
-    &_top {
-      top: 0;
-      left: -85rem;
-      width: 307rem;
-    }
-
-    &_bottom {
-      bottom: -152px;
-      right: -173rem;
-      width: 360rem;
-      transform: rotate(275deg);
-    }
-  }
-
-  &__input-container {
-    position: relative;
-    display: flex;
-
-    input {
-      border-radius: $border-radius;
-      background-color: $white;
-      box-shadow: 0 5rem 30rem 0 rgba(0, 0, 0, 0.20);
-      padding: 29rem 112rem 25rem 20rem;
-      width: 100%;
-      border: none;
-      outline: none;
-
-      &::placeholder {
-        font-size: 16rem;
-      }
-    }
-  }
-
-  &__btn {
-    position: absolute;
-    display: flex;
-    width: 103rem;
-    height: 54rem;
-    padding: 10rem 15rem;
-    justify-content: center;
-    align-items: center;
-    border-radius: $border-radius;
-    background-color: $accent;
-    border: none;
-    color: $white;
-    top: 8rem;
-    right: 8rem;
-    font-size: 16rem;
   }
 }
 
@@ -246,7 +145,7 @@
     }
 
     &__number {
-      font-size: 20px;
+      font-size: 20rem;
     }
 
     &__menu-list {
@@ -268,50 +167,6 @@
   .cards__list {
     justify-content: flex-start;
   }
-
-  .subscribe {
-
-    .container {
-      padding: 47rem 141rem;
-    }
-
-    &__container {
-      gap: 34rem;
-    }
-
-    &__img-container {
-      &_top {
-        left: 29rem;
-        width: 360rem;
-      }
-
-      &_bottom {
-        bottom: -119px;
-        right: -26rem;
-        width: 345rem;
-        transform: rotate(2deg);
-      }
-    }
-
-    &__title {
-      text-align: center;
-      margin: 0 48rem;
-      font-size: 20rem;
-    }
-
-    &__input-container {
-
-      input {
-        padding: 32rem 156rem 29rem 29rem;
-      }
-    }
-
-    &__btn {
-      width: 140rem;
-      height: 61rem;
-      right: 5rem;
-    }
-  }
 }
 
 @include lg {
@@ -321,14 +176,16 @@
       padding: 45rem 18rem 69rem;
     }
 
-    &__top {
+    &__bottom, &__top {
       justify-content: space-between;
+    }
+
+    &__top {
       padding-bottom: 43rem;
     }
 
     &__bottom {
       align-items: center;
-      justify-content: space-between;
     }
 
     &__information {
@@ -348,47 +205,11 @@
     }
 
     &__copyright {
-      margin-right: 15px;
+      margin-right: 15rem;
     }
   }
 
   .social-network__list {
     gap: 18rem;
-  }
-
-  .subscribe {
-
-    .container {
-      padding: 51rem 158rem;
-    }
-
-    &__container {
-      gap: 28rem;
-      margin: 0 auto;
-      max-width: 1300rem;
-      align-items: center;
-      flex-direction: row;
-    }
-
-    &__title {
-      max-width: 379rem;
-      margin: 0;
-    }
-
-    &__input-container {
-      width: 100%;
-
-      input {
-        padding: 32rem 200rem 29rem 21rem;
-        font-size: 15px;
-        font-weight: 300;
-      }
-    }
-
-    &__btn {
-      width: 171rem;
-      height: 61rem;
-      right: 14rem;
-    }
   }
 }

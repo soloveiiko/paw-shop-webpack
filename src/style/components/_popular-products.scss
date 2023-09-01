@@ -60,9 +60,12 @@
     font-size: $simple-text-size-mobile;
   }
 
-  &__stars-container {
+  &__stars-container, &__price-container, &__price-wrapper {
     display: flex;
     align-items: center;
+  }
+
+  &__stars-container {
     gap: 15rem;
   }
 
@@ -76,14 +79,10 @@
   }
 
   &__price-container {
-    display: flex;
-    align-items: center;
     justify-content: space-between;
   }
 
   &__price-wrapper {
-    display: flex;
-    align-items: center;
     gap: 10rem;
   }
 

@@ -18,12 +18,15 @@
       display: flex;
     }
 
+    &_top, &_bottom {
+      width: 100%;
+      justify-content: center;
+    }
+
     &_top {
       top: 46rem;
-      width: 100%;
       left: 21rem;
       z-index: 2;
-      justify-content: center;
       height: 270rem;
     }
 
@@ -31,8 +34,6 @@
       align-items: end;
       bottom: 256rem;
       left: 0;
-      width: 100%;
-      justify-content: center;
     }
   }
 
@@ -84,7 +85,6 @@
 
   &__title {
     position: relative;
-    z-index: 1;
     margin: 112rem 13% 34rem;
     color: $accent;
     letter-spacing: 0.5rem;

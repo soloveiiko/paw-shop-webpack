@@ -3,7 +3,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 15rem;
   border-radius: $border-radius;
   border: none;
   cursor: pointer;
@@ -19,19 +19,19 @@
 
 @mixin pet-button {
   @include button;
-  height: 60px;
-  padding: 20px 25px;
+  height: 60rem;
+  padding: 20rem 25rem;
   background-color: $transparent-white;
 }
 
 @mixin pet-button-hover {
   background-color: $white;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.10);
+  box-shadow: 0 5rem 10rem 0 rgba(0, 0, 0, 0.10);
 }
 
 @mixin arrow {
-  width: 59px;
-  height: 59px;
+  width: 59rem;
+  height: 59rem;
 }
 
 @mixin h1-title-mobile {
