@@ -14,8 +14,8 @@
 html,
 body {
   font-family: 'Montserrat Alternates', sans-serif;
-  font-size: $text-size-mobile;
   font-weight: 400;
+  font-size: $text-size-mobile;
   position: relative;
   overflow-x: hidden;
   height: 100%;
@@ -99,7 +99,7 @@ h3 {
 @include md {
   html,
   body {
-    font-size: $text-size;
+    font-size: $text-size-tablet;
   }
 
   .popular-products, .about-us {
@@ -118,6 +118,10 @@ h3 {
 }
 
 @include lg {
+  html,
+  body {
+    font-size: $text-size-desktop;
+  }
   .popular-products, .about-us {
     padding-top: 141px;
   }

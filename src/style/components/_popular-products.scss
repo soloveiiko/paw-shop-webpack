@@ -1,42 +1,42 @@
 .popular-products {
-  padding-right: 15px;
-  padding-left: 15px;
-  max-width: 1198px;
+  padding-right: 15rem;
+  padding-left: 15rem;
+  max-width: 1198rem;
   margin: 0 auto;
   overflow: hidden;
-  padding-bottom: 52px;
+  padding-bottom: 53rem;
 
   &__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px 15px;
-    margin: 34px 0 44px;
+    gap: 15rem;
+    margin: 34rem 0 44rem;
     justify-content: space-between;
   }
 
   &__item {
     position: relative;
     border-radius: $border-radius;
-    border: 1px solid $light-gray;
-    padding: 15px;
-    width: calc(50% - 7.5px);
+    border: 1rem solid $light-gray;
+    padding: 15rem;
+    width: calc(50% - 7.5rem);
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 13rem;
   }
 
   &__discount, &__new {
     position: absolute;
-    top: 15px;
-    left: 16px;
+    top: 13rem;
+    left: 16rem;
     width: fit-content;
-    padding: 5px 10px;
+    padding: 13rem 27rem;
     border-radius: $border-radius;
     color: $white;
   }
 
   &__discount {
-    border-radius: 20px;
+    border-radius: 20rem;
     background: linear-gradient(179deg, #E9A904 0%, #FFC805 100%);
   }
 
@@ -54,21 +54,22 @@
   }
 
   &__title {
+    font-size: $simple-text-size-mobile;
   }
 
   &__stars-container {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 15rem;
   }
 
   &__stars-range {
     display: flex;
-    gap: 7px;
+    gap: 7rem;
   }
 
   &__stars-count {
-    font-size: 12px;
+    font-size: 12rem;
   }
 
   &__price-container {
@@ -80,11 +81,11 @@
   &__price-wrapper {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 10rem;
   }
 
   &__price, &__curr-price {
-    font-size: 18px;
+    font-size: 18rem;
     font-weight: 500;
   }
 
@@ -93,138 +94,142 @@
   }
 
   &__prev-price {
-    font-size: 12px;
+    font-size: 12rem;
     text-decoration-line: line-through;
     color: $dark-gray;
   }
 
   &__btn-in-basket {
     @include button;
-    padding: 13px 15px;
-    gap: 5px;
+    padding: 14rem 15rem;
+    gap: 5rem;
     background-color: $accent;
     color: $white;
 
     img {
-      width: 16px;
-      height: 16px;
+      width: 16rem;
+      height: 16rem;
     }
   }
 
   &__for-pets {
     display: flex;
-    gap: 15px;
+    gap: 15rem;
     justify-content: center;
   }
 
   &__btn {
     @include pet-button;
-    gap: 12px;
-    padding: 32px 15px;
+    gap: 12rem;
+    padding: 32rem 15rem;
   }
 
   &__btn-for-cat {
     button {
-      border: 2px solid $cat;
+      border: 2rem solid $cat;
     }
   }
 
   &__btn-for-dog {
     button {
-      border: 2px solid $dog;
+      border: 2rem solid $dog;
     }
   }
 }
 
 @include md {
   .popular-products {
-    padding-bottom: 80px;
+    padding-bottom: 80rem;
 
     &__list {
       display: flex;
       flex-wrap: nowrap;
-      margin: 40px 0 44px;
+      margin: 40rem 0 44rem;
     }
 
     &__item {
-      width: calc(32.7% - 5px);
+      width: calc(32.7% - 5rem);
       flex-shrink: 0;
-      padding: 30px 17px;
-      gap: 25px;
+      padding: 30rem 17rem;
+      gap: 25rem;
+    }
+
+    &__title {
+      font-size: $simple-text-size;
     }
 
     &__discount, &__new {
-      top: 16px;
-      left: 20.5px;
-      padding: 8px 11px;
+      top: 16rem;
+      left: 20.5rem;
+      padding: 8rem 11rem;
     }
 
     &__stars-container {
-      margin-top: 10px;
+      margin-top: 10rem;
     }
 
     &__stars-range {
-      gap: 6px;
+      gap: 6rem;
     }
 
     &__price-container {
-      margin-top: -7px;
+      margin-top: -7rem;
     }
 
     &__price, &__curr-price {
-      font-size: 22px;
+      font-size: 22rem;
     }
 
     &__prev-price {
-      font-size: 16px;
+      font-size: 16rem;
     }
 
     &__btn-in-basket {
-      font-size: 22px;
-      padding: 8px 16px;
-      gap: 17px;
+      font-size: 22rem;
+      padding: 8rem 16rem;
+      gap: 17rem;
     }
 
     &__btn {
-      padding: 28px 26px 28px 31px;
-      gap: 10px;
+      padding: 28rem 26rem 28rem 31rem;
+      gap: 10rem;
     }
 
     &__btn-title {
-      font-size: 15px;
+      font-size: 15rem;
     }
   }
 }
 
 @include lg {
   .popular-products {
-    padding-bottom: 130px;
+    padding-bottom: 130rem;
 
     &__list {
-      gap: 30px;
-      margin: 40px 0 53px;
+      gap: 30rem;
+      margin: 40rem 0 94rem;
     }
 
     &__item {
       flex-shrink: 1;
-      padding: 19px 17px;
-      gap: 8px;
+      padding: 19rem 17rem;
+      gap: 8rem;
     }
 
     &__stars-container {
-      margin-top: 25px;
+      margin-top: 25rem;
     }
 
     &__price-container {
-      margin-top: 12px;
+      margin-top: 12rem;
     }
 
     &__btn-in-basket {
-      padding: 8px 22px;
+      padding: 8rem 22rem;
     }
 
     &__for-pets {
-      gap: 30px;
+      gap: 30rem;
     }
   }
 }

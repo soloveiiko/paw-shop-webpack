@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   right: 0;
-  max-width: 1205px;
+  max-width: 1205rem;
   margin: 0 auto;
   z-index: 20;
 
@@ -12,13 +12,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 14px 17px;
+    padding: 14rem 17rem;
   }
 
   &__tools {
     display: flex;
     align-items: center;
-    gap: 33px;
+    gap: 33rem;
   }
 
   &__number {
@@ -31,8 +31,8 @@
   &__open-toggle-menu {
     display: flex;
     align-items: center;
-    width: 33px;
-    height: 18.207px;
+    width: 33rem;
+    height: 18.207rem;
   }
 
   &__open-toggle-menu-btn {
@@ -40,7 +40,7 @@
     position: relative;
     width: 100%;
     margin: 0;
-    padding: 1px 16px;
+    padding: 1rem 16rem;
     cursor: pointer;
     border: none;
     background-color: $black;
@@ -48,17 +48,17 @@
     &::before, &::after {
       position: absolute;
       left: 0;
-      padding: 1px 16.5px;
+      padding: 1rem 16.5rem;
       content: '';
       background-color: $black;
     }
 
     &::before {
-      top: -11px;
+      top: -11rem;
     }
 
     &::after {
-      top: 11px;
+      top: 11rem;
     }
   }
 
@@ -76,15 +76,15 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 12rem;
 
   &__image {
-    width: 43px;
+    width: 43rem;
   }
 
   &__text {
     font-family: 'Amatic SC', cursive;
-    font-size: 24px;
+    font-size: 24rem;
     font-weight: 700;
   }
 }
@@ -93,6 +93,10 @@
   display: none;
 
   &__item {
+    a {
+      font-size: 15rem;
+    }
+
     b {
       font-weight: 500;
       text-transform: uppercase;
@@ -104,25 +108,25 @@
   position: relative;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 10rem;
 
   &__image {
-    padding: 11px 13.5px;
-    border-radius: 50px;
+    padding: 11rem 13.5rem;
+    border-radius: 50rem;
     background-color: $accent;
   }
 
   &__counter {
     position: absolute;
-    right: -1px;
-    bottom: -4px;
+    right: -1rem;
+    bottom: -4rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 22px;
-    height: 22px;
+    width: 22rem;
+    height: 22rem;
     color: $white;
-    border-radius: 50px;
+    border-radius: 50rem;
     background: $gradient;
   }
 
@@ -132,54 +136,54 @@
 }
 
 .toggle-menu {
-  padding: 0 0 50px;
-  border-radius: 0 0 20px 20px;
+  padding: 0 0 50rem;
+  border-radius: 0 0 20rem 20rem;
 
   &__top-block {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 16px;
-    border-bottom: 1px solid $light-gray;
+    padding: 20rem 16rem;
+    border-bottom: 1rem solid $light-gray;
   }
 
   &__logo {
-    font-size: 24px;
+    font-size: 24rem;
     font-weight: 700;
   }
 
   &__close-btn {
-    font-size: 20px;
+    font-size: 20rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 32px;
-    height: 32px;
+    width: 32rem;
+    height: 32rem;
     cursor: pointer;
     color: #8936FF;
-    border: 1px solid #8936FF;
-    border-radius: 50px;
+    border: 1rem solid #8936FF;
+    border-radius: 50rem;
     background-color: $white;
   }
 
   &__container {
-    padding: 20px 16px 60px;
+    padding: 20rem 16rem 60rem;
   }
 
   &__list {
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 35rem;
   }
 
   &__item {
-    font-size: 16px;
+    font-size: 16rem;
   }
 
   &__number {
     font-size: $h3-size;
     font-weight: 500;
-    padding: 0 16px;
+    padding: 0 16rem;
     white-space: nowrap;
   }
 }
@@ -187,7 +191,7 @@
 @include md {
   .header {
     &__container {
-      padding: 5px 17px;
+      padding: 7rem 17rem;
     }
 
     &__number {
@@ -195,24 +199,24 @@
     }
 
     &__tools {
-      gap: 26px;
+      gap: 26rem;
     }
   }
   .logo {
     &__image {
-      width: 38px;
+      width: 38rem;
     }
 
     &__text {
-      font-size: 28px;
+      font-size: 28rem;
     }
   }
   .basket {
-    padding: 8px 9.5px;
+    padding: 8rem 9.5rem;
 
     &__counter {
-      left: 43px;
-      bottom: 4px;
+      left: 43rem;
+      bottom: 4rem;
     }
 
     &__price {
@@ -223,7 +227,7 @@
   .toggle-menu {
     &__list {
       flex-wrap: wrap;
-      height: 140px;
+      height: 140rem;
     }
 
     &__number {
@@ -235,7 +239,7 @@
 @include lg {
   .header {
     &__number {
-      margin: 0 51px 0 auto;
+      margin: 0 51rem 0 auto;
     }
 
     &__open-toggle-menu {
@@ -243,11 +247,12 @@
     }
 
     &__tools {
-      gap: 47px;
+      margin: 0 18rem 0 0;
+      gap: 47rem;
     }
   }
   .logo {
-    gap: 15px;
+    gap: 15rem;
   }
   .menu {
     display: block;
@@ -257,13 +262,14 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 40px;
+      gap: 40rem;
     }
   }
   .basket {
-    padding: 8px 0;
-      &__counter {
-        left: 33px;
-      }
+    padding: 8rem 0;
+
+    &__counter {
+      left: 33rem;
+    }
   }
 }

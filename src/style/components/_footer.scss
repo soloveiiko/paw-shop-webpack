@@ -2,8 +2,8 @@
   background: linear-gradient(180deg, #5F23B4 0%, #4E1D94 100%);
 
   &__body {
-    padding: 50px 18px;
-    gap: 34px;
+    padding: 50rem 18rem;
+    gap: 34rem;
   }
 
   &__body, &__top {
@@ -12,26 +12,26 @@
   }
 
   &__top {
-    gap: 34px;
-    padding-bottom: 40px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    gap: 34rem;
+    padding-bottom: 40rem;
+    border-bottom: 1rem solid rgba(255, 255, 255, 0.2);
   }
 
   &__logo {
     color: $white;
     font-family: 'Amatic SC', cursive;
-    font-size: 50px;
+    font-size: 50rem;
     font-weight: 700;
   }
 
   &__number-wrapper {
     display: flex;
-    gap: 14px;
+    gap: 14rem;
     align-items: center;
   }
 
   &__number {
-    font-size: 17px;
+    font-size: 17rem;
     font-weight: 500;
     color: $white;
   }
@@ -46,18 +46,19 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 39px 30px;
-    height: 248px;
+    gap: 39rem 30rem;
+    height: 248rem;
   }
 
   &__menu-item {
+    font-size: $simple-text-size-mobile;
     color: $white;
   }
 
   &__bottom {
     display: flex;
     flex-direction: column;
-    gap: 34px;
+    gap: 34rem;
   }
 
   &__cards {
@@ -66,17 +67,17 @@
   &__copyright {
     color: $white;
     opacity: 0.5;
-    font-size: 13px;
+    font-size: 13rem;
     text-align: center;
   }
 
-  
+
   .logo {
-    gap: 29px;
+    gap: 29rem;
 
     &__image {
-      width: 58px;
-      height: 74px;
+      width: 58rem;
+      height: 74rem;
     }
   }
 }
@@ -85,9 +86,9 @@
   position: relative;
   background: linear-gradient(180deg, #893EF4 0%, #722AD8 100%);
   display: flex;
-  padding: 52px 17px;
+  padding: 52rem 17rem;
   flex-direction: column;
-  gap: 29px;
+  gap: 29rem;
 
   &__background {
     width: 100%;
@@ -95,8 +96,8 @@
 
   &__title {
     color: $white;
-    margin: 0 18px;
-    font-size: 17px;
+    margin: 0 18rem;
+    font-size: 17rem;
   }
 
   &__title, &__input-container {
@@ -112,13 +113,13 @@
 
     &_top {
       top: 0;
-      left: -85px;
+      left: -85rem;
       width: 82%;
     }
 
     &_bottom {
       bottom: 0;
-      right: -170px;
+      right: -170rem;
     }
   }
 
@@ -129,13 +130,13 @@
     input {
       border-radius: $border-radius;
       background-color: $white;
-      box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.20);
-      padding: 29px 112px 25px 20px;
+      box-shadow: 0 5rem 30rem 0 rgba(0, 0, 0, 0.20);
+      padding: 29rem 112rem 25rem 20rem;
       width: 100%;
       border: none;
 
       &::placeholder {
-        font-size: 16px;
+        font-size: 16rem;
       }
     }
   }
@@ -143,18 +144,18 @@
   &__btn {
     position: absolute;
     display: flex;
-    width: 103px;
-    height: 54px;
-    padding: 10px 15px;
+    width: 103rem;
+    height: 54rem;
+    padding: 10rem 15rem;
     justify-content: center;
     align-items: center;
     border-radius: $border-radius;
     background-color: $accent;
     border: none;
     color: $white;
-    top: 8px;
-    right: 8px;
-    font-size: 16px;
+    top: 8rem;
+    right: 8rem;
+    font-size: 16rem;
 
   }
 }
@@ -163,15 +164,15 @@
 .social-network {
   &__list {
     display: flex;
-    gap: 32px;
+    gap: 32rem;
     align-items: center;
   }
 
   &__item {
-    width: 33px;
-    height: 33px;
+    width: 33rem;
+    height: 33rem;
     background-color: $accent;
-    border-radius: 50px;
+    border-radius: 50rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -187,14 +188,14 @@
   &__list {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 10rem;
   }
 
   &__item {
   }
 
   &__image {
-    border-radius: 10px;
+    border-radius: 10rem;
   }
 }
 
