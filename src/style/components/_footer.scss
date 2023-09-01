@@ -42,12 +42,6 @@
     color: $white;
   }
 
-  &__social-network {
-  }
-
-  &__menu {
-  }
-
   &__menu-list {
     display: flex;
     flex-wrap: wrap;
@@ -148,6 +142,7 @@
       padding: 29rem 112rem 25rem 20rem;
       width: 100%;
       border: none;
+      outline: none;
 
       &::placeholder {
         font-size: 16rem;
@@ -202,9 +197,6 @@
     display: flex;
     justify-content: center;
     gap: 10rem;
-  }
-
-  &__item {
   }
 
   &__image {
@@ -311,7 +303,6 @@
 
       input {
         padding: 32rem 156rem 29rem 29rem;
-
       }
     }
 
@@ -389,6 +380,8 @@
 
       input {
         padding: 32rem 200rem 29rem 21rem;
+        font-size: 15px;
+        font-weight: 300;
       }
     }
 

@@ -129,13 +129,13 @@
 
   &__btn-for-cat {
     button {
-      border: 2rem solid $cat;
+      border: 1rem solid $cat;
     }
   }
 
   &__btn-for-dog {
     button {
-      border: 2rem solid $dog;
+      border: 1rem solid $dog;
     }
   }
 }
@@ -236,10 +236,22 @@
 
     &__btn-in-basket {
       padding: 8rem 22rem;
+
+      &:hover {
+        background-color: $dark;
+      }
     }
 
     &__for-pets {
       gap: 30rem;
+    }
+
+    &__btn:hover {
+      border-width: 1.5rem;
+
+      .popular-products__arrow {
+        transform: rotate(44deg);
+      }
     }
   }
 }

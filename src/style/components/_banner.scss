@@ -252,19 +252,28 @@
       padding-bottom: 117rem;
     }
 
+    &__for-pets-btn:hover {
+      background-color: $white;
+    }
+
+    .cat-btn:hover, .cat-btn.hover {
+      .banner__arrow {
+        transform: rotate(315deg);
+      }
+    }
+
+    .dog-btn:hover, .dog-btn.hover {
+      .banner__arrow {
+        transform: rotate(44deg);
+      }
+    }
+
     &__title {
       margin: 152rem auto 55rem;
     }
 
     &__img-container {
-
-      &_cat {
-        display: flex;
-        top: auto;
-        bottom: 0;
-      }
-
-      &_dog {
+      &_cat, &_dog {
         display: flex;
         top: auto;
         bottom: 0;
@@ -285,12 +294,20 @@
 
       &_cat {
         margin-left: -162rem;
+
+        &:hover {
+          scale: 1.1;
+        }
       }
 
       &_dog {
         margin-bottom: 87rem;
         scale: 1.2;
         margin-left: -112rem;
+
+        &:hover {
+          scale: 1.3;
+        }
       }
     }
 
