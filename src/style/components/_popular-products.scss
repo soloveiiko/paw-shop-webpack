@@ -20,6 +20,9 @@
     border: 1rem solid $light-gray;
     padding: 15rem;
     width: calc(50% - 7.5rem);
+  }
+
+  &__information, &__item {
     display: flex;
     flex-direction: column;
     gap: 15rem;
@@ -144,14 +147,18 @@
     &__list {
       display: flex;
       flex-wrap: nowrap;
-      margin: 40rem 0 44rem;
+      margin: 40rem 0 49rem;
     }
 
     &__item {
       width: calc(32.7% - 5rem);
       flex-shrink: 0;
-      padding: 30rem 17rem;
-      gap: 25rem;
+      padding: 32rem 17rem 22rem;
+      gap: 22rem;
+    }
+
+    &__information {
+      gap: 24rem;
     }
 
     &__title {
@@ -186,7 +193,7 @@
 
     &__btn-in-basket {
       font-size: 22rem;
-      padding: 8rem 16rem;
+      padding: 10rem 16rem;
       gap: 17rem;
     }
 
@@ -213,6 +220,9 @@
     &__item {
       flex-shrink: 1;
       padding: 19rem 17rem;
+    }
+
+    &__information, &__item {
       gap: 8rem;
     }
 
