@@ -115,7 +115,11 @@
 
 @include lg {
   .about-us {
-    padding-bottom: 93rem;
+    padding-bottom: 89rem;
+
+    &__list {
+      gap: 20px;
+    }
 
     &__item {
       &_dog, &_cat {
@@ -136,9 +140,9 @@
 
     &__text-wrapper {
       width: 43%;
-      margin-top: 78rem;
+      margin-top: 76rem;
       margin-left: 50rem;
-      gap: 20rem;
+      gap: 15rem;
     }
   }
 }

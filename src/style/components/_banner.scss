@@ -95,6 +95,7 @@
       top: 4rem;
       left: 1rem;
       color: $dark;
+      font-size: $h1-size-mobile;
     }
   }
 
@@ -159,7 +160,12 @@
       margin: 174rem auto 55rem;
       max-width: 583rem;
       width: 100%;
+
+      &_duplicate {
+        font-size: $h1-size;
+      }
     }
+
 
     &__text {
       max-width: fit-content;

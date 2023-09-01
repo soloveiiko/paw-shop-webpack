@@ -2,11 +2,13 @@
   background: linear-gradient(180deg, #5F23B4 0%, #4E1D94 100%);
 
   &__body {
-    padding: 50rem 18rem;
+    padding: 50rem 18rem 45px;
     gap: 34rem;
+    max-width: 1210px;
+    margin: 0 auto;
   }
 
-  &__body, &__top {
+  &__body, &__top, &__information {
     display: flex;
     flex-direction: column;
   }
@@ -15,6 +17,10 @@
     gap: 34rem;
     padding-bottom: 40rem;
     border-bottom: 1rem solid rgba(255, 255, 255, 0.2);
+  }
+
+  &__information {
+    gap: 34rem;
   }
 
   &__logo {
@@ -71,7 +77,6 @@
     text-align: center;
   }
 
-
   .logo {
     gap: 29rem;
 
@@ -83,12 +88,19 @@
 }
 
 .subscribe {
-  position: relative;
   background: linear-gradient(180deg, #893EF4 0%, #722AD8 100%);
-  display: flex;
-  padding: 52rem 17rem;
-  flex-direction: column;
-  gap: 29rem;
+  overflow: hidden;
+
+  .container {
+    padding: 52rem 17px;
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 29rem;
+  }
 
   &__background {
     width: 100%;
@@ -114,12 +126,14 @@
     &_top {
       top: 0;
       left: -85rem;
-      width: 82%;
+      width: 307rem;
     }
 
     &_bottom {
-      bottom: 0;
-      right: -170rem;
+      bottom: -152px;
+      right: -173rem;
+      width: 360rem;
+      transform: rotate(275deg);
     }
   }
 
@@ -156,7 +170,6 @@
     top: 8rem;
     right: 8rem;
     font-size: 16rem;
-
   }
 }
 
@@ -202,10 +215,187 @@
 
 @include md {
   .footer {
+
+    &__body {
+      padding: 45rem 18rem 40rem;
+      gap: 38rem;
+    }
+
+    &__top {
+      flex-direction: row;
+      gap: 183rem;
+      padding-bottom: 62rem;
+    }
+
+    &__information {
+      gap: 28rem;
+    }
+
+    &__bottom {
+      flex-direction: row;
+      gap: 57rem;
+    }
+
+    &__logo, &__number-wrapper, &__social-network, &__menu {
+      width: fit-content;
+    }
+
+    .logo {
+      gap: 21rem;
+
+      &__image {
+        width: 55rem;
+        height: 72rem;
+      }
+    }
+
+    &__number-wrapper {
+      gap: 7rem;
+    }
+
+    &__number {
+      font-size: 20px;
+    }
+
+    &__menu-list {
+      gap: 23rem 107rem;
+      height: 200rem;
+      padding: 8rem 0;
+    }
+
+    &__copyright {
+      font-size: 14.5rem;
+      text-align: start;
+    }
+  }
+
+  .social-network__list {
+    gap: 16rem;
+  }
+
+  .cards__list {
+    justify-content: flex-start;
+  }
+
+  .subscribe {
+
+    .container {
+      padding: 47rem 141rem;
+    }
+
+    &__container {
+      gap: 34rem;
+    }
+
+    &__img-container {
+      &_top {
+        left: 29rem;
+        width: 360rem;
+      }
+
+      &_bottom {
+        bottom: -119px;
+        right: -26rem;
+        width: 345rem;
+        transform: rotate(2deg);
+      }
+    }
+
+    &__title {
+      text-align: center;
+      margin: 0 48rem;
+      font-size: 20rem;
+    }
+
+    &__input-container {
+
+      input {
+        padding: 32rem 156rem 29rem 29rem;
+
+      }
+    }
+
+    &__btn {
+      width: 140rem;
+      height: 61rem;
+      right: 5rem;
+    }
   }
 }
 
 @include lg {
   .footer {
+
+    &__body {
+      padding: 45rem 18rem 69rem;
+    }
+
+    &__top {
+      justify-content: space-between;
+      padding-bottom: 43rem;
+    }
+
+    &__bottom {
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__information {
+      gap: 27rem;
+    }
+
+    &__number-wrapper {
+      gap: 15rem;
+    }
+
+    &__menu {
+      margin-right: 56rem;
+    }
+
+    &__menu-list {
+      align-content: flex-end;
+    }
+
+    &__copyright {
+      margin-right: 15px;
+    }
+  }
+
+  .social-network__list {
+    gap: 18rem;
+  }
+
+  .subscribe {
+
+    .container {
+      padding: 51rem 158rem;
+    }
+
+    &__container {
+      gap: 28rem;
+      margin: 0 auto;
+      max-width: 1300rem;
+      align-items: center;
+      flex-direction: row;
+    }
+
+    &__title {
+      max-width: 379rem;
+      margin: 0;
+    }
+
+    &__input-container {
+      width: 100%;
+
+      input {
+        padding: 32rem 200rem 29rem 21rem;
+      }
+    }
+
+    &__btn {
+      width: 171rem;
+      height: 61rem;
+      right: 14rem;
+    }
   }
 }

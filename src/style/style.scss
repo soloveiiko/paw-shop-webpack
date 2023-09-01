@@ -31,6 +31,7 @@ html {
 * {
   box-sizing: inherit;
   color: $black;
+  font-size: $simple-text-size-mobile;
 }
 
 a,
@@ -100,6 +101,11 @@ h3 {
   html,
   body {
     font-size: $text-size-tablet;
+  }
+
+
+  * {
+    font-size: $simple-text-size;
   }
 
   .popular-products, .about-us {

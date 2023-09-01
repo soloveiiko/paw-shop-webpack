@@ -128,6 +128,7 @@
     color: $white;
     border-radius: 50rem;
     background: $gradient;
+    font-size: 14rem;
   }
 
   &__price {
@@ -191,7 +192,7 @@
 @include md {
   .header {
     &__container {
-      padding: 7rem 17rem;
+      padding: 8rem 17rem;
     }
 
     &__number {
@@ -199,7 +200,7 @@
     }
 
     &__tools {
-      gap: 26rem;
+      gap: 29rem;
     }
   }
   .logo {
@@ -215,13 +216,17 @@
     padding: 8rem 9.5rem;
 
     &__counter {
-      left: 43rem;
+      left: 40rem;
       bottom: 4rem;
     }
 
     &__price {
       font-weight: 500;
       display: block;
+    }
+
+    &__image {
+      padding: 8rem 11.5rem;
     }
   }
   .toggle-menu {

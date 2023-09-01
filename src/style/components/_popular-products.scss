@@ -9,7 +9,7 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 15rem;
+    gap: 12rem 15rem;
     margin: 34rem 0 44rem;
     justify-content: space-between;
   }
@@ -22,7 +22,7 @@
     width: calc(50% - 7.5rem);
     display: flex;
     flex-direction: column;
-    gap: 13rem;
+    gap: 15rem;
   }
 
   &__discount, &__new {
@@ -207,7 +207,7 @@
 
     &__list {
       gap: 30rem;
-      margin: 40rem 0 94rem;
+      margin: 40rem 0 54rem;
     }
 
     &__item {
