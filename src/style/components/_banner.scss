@@ -1,5 +1,23 @@
 .banner {
   background: linear-gradient(179deg, #E9A904 0%, #FFC805 100%);
+  position: relative;
+
+  &__main-background {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 0;
+    top: 60rem;
+    bottom: 60rem;
+    right: 0;
+
+    img {
+      opacity: 0.2;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 
   &__container {
     position: relative;
@@ -149,6 +167,11 @@
 
 @include md {
   .banner {
+
+    &__main-background {
+      bottom: 250rem;
+    }
+
     &__for-pets {
       max-width: 550rem;
       gap: 52rem 118rem;
@@ -165,7 +188,6 @@
         font-size: $h1-size;
       }
     }
-
 
     &__text {
       max-width: fit-content;
@@ -235,6 +257,11 @@
 
 @include lg {
   .banner {
+
+    &__main-background {
+      bottom: 50rem;
+    }
+
     &__container {
       padding: 86rem 0 60rem;
     }
